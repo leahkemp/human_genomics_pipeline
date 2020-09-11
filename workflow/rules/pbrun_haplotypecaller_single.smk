@@ -15,7 +15,7 @@ rule pbrun_haplotypecaller_single:
     log:
         "logs/pbrun_haplotypecaller/{sample}.log"
     benchmark:
-        "benchmarks/pbrun_haplotypecaller/{sample}.tsv"
+        repeat("benchmarks/pbrun_haplotypecaller/{sample}.tsv", 3)
     message:
         "Calling germline SNPs and indels via local re-assembly of haplotypes for {input.bam}"
     shell:

@@ -7,7 +7,7 @@ rule pbrun_genotypegvcf:
     log:
         "logs/pbrun_genotypegvcf/{family}.log"
     benchmark:
-        "benchmarks/pbrun_genotypegvcf/{family}.tsv"
+        repeat("benchmarks/pbrun_genotypegvcf/{family}.tsv", 3)
     threads: 16
     message:
         "Performing joint genotyping on one or more samples pre-called with HaplotypeCaller for {input.gvcf}"

@@ -10,7 +10,7 @@ rule gatk_MarkDuplicates:
     log:
         "logs/gatk_MarkDuplicates/{sample}.log"
     benchmark:
-        "benchmarks/gatk_MarkDuplicates/{sample}.tsv"
+        repeat("benchmarks/gatk_MarkDuplicates/{sample}.tsv", 3)
     conda:
         "../envs/gatk4.yaml"
     message:

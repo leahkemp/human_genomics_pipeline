@@ -26,7 +26,7 @@ rule pbrun_fq2bam:
     log:
         "logs/pbrun_fq2bam/{sample}.log"
     benchmark:
-        "benchmarks/pbrun_fq2bam/{sample}.tsv"
+        repeat("benchmarks/pbrun_fq2bam/{sample}.tsv", 3)
     message:
         "Generating a BAM output for {input.R1} and {input.R2} using BWA-Mem, gatk MarkDuplicates and gatk BaseRecalibrator"
     shell:

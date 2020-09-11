@@ -11,7 +11,7 @@ rule gatk_ApplyBQSR:
     log:
         "logs/gatk_ApplyBQSR/{sample}.log"
     benchmark:
-        "benchmarks/gatk_ApplyBQSR/{sample}.tsv"
+        repeat("benchmarks/gatk_ApplyBQSR/{sample}.tsv", 3)
     conda:
         "../envs/gatk4.yaml"
     message:

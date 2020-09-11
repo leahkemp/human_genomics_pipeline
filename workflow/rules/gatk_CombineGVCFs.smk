@@ -33,7 +33,7 @@ rule gatk_CombineGVCFs:
     log: 
         "logs/gatk_CombineGVCFs/{family}.log"
     benchmark:
-        "benchmarks/gatk_CombineGVCFs/{family}.tsv"
+        repeat("benchmarks/gatk_CombineGVCFs/{family}.tsv", 3)
     conda:
         "../envs/gatk4.yaml"
     message:

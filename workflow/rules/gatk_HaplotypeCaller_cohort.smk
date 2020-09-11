@@ -15,10 +15,10 @@ rule gatk_HaplotypeCaller_cohort:
     log:
         "logs/gatk_HaplotypeCaller_cohort/{sample}.log"
     benchmark:
-        "benchmarks/gatk_HaplotypeCaller_cohort/{sample}.tsv"
+        repeat("benchmarks/gatk_HaplotypeCaller_cohort/{sample}.tsv", 3)
     conda:
         "../envs/gatk4.yaml"
-    threads: 16
+    threads: 32
     message:
         "Calling germline SNPs and indels via local re-assembly of haplotypes for {input.bams}"
     shell:

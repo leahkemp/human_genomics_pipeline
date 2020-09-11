@@ -20,7 +20,7 @@ rule bwa_mem:
     log:
         "logs/bwa_mem/{sample}.log"
     benchmark:
-        "benchmarks/bwa_mem/{sample}.tsv"
+        repeat("benchmarks/bwa_mem/{sample}.tsv", 3)
     conda:
         "../envs/bwa.yaml"
     threads: 32

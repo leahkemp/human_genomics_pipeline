@@ -12,10 +12,10 @@ rule gatk_GenotypeGVCFs:
     log:
         "logs/gatk_GenotypeGVCFs/{family}.log"
     benchmark:
-        "benchmarks/gatk_GenotypeGVCFs/{family}.tsv"
+        repeat("benchmarks/gatk_GenotypeGVCFs/{family}.tsv", 3)
     conda:
         "../envs/gatk4.yaml"
-    threads: 16
+    threads: 32
     message:
         "Performing joint genotyping on one or more samples pre-called with HaplotypeCaller for {input.gvcf}"
     shell:

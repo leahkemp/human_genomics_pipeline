@@ -8,9 +8,9 @@ rule fastqc:
     log:
         "logs/fastqc/{sample}.log"
     benchmark:
-        "benchmarks/fastqc/{sample}.tsv"
+        repeat("benchmarks/fastqc/{sample}.tsv", 3)
     message:
         "Undertaking quality control checks on raw sequence data for {input}"
-    threads: 1
+    threads: 32
     wrapper:
         "0.64.0/bio/fastqc"

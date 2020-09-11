@@ -12,11 +12,11 @@ rule trim_galore_pe:
     log:
         "logs/trim_galore/{sample}.log"
     benchmark:
-        "benchmarks/trim_galore_pe/{sample}.tsv"
+        repeat("benchmarks/trim_galore_pe/{sample}.tsv", 3)
     conda:
         "../envs/trim_galore.yaml"
-    threads: 16
+    threads: 32
     message:
         "Applying quality and adapter trimming to input fastq files: {input}"
     shell:
-        "trim_galore {input} -o ../results/trimmed/ {params.adapters} {params.other} -j {threads} &> {log}"
+        "trim_galore {input} -o ../results/trimmed/ {params.adapters} {params.other} -j {threads}"
