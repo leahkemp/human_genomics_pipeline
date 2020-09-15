@@ -1,0 +1,138 @@
+localrules directive specifies rules that are not present in the Snakefile:
+	pbrun_fq2bam
+	pbrun_genotypegvcf
+	pbrun_haplotypecaller_cohort
+	pbrun_haplotypecaller_single
+
+Building DAG of jobs...
+Creating conda environment https:/github.com/snakemake/snakemake-wrappers/raw/0.64.0/bio/fastqc/environment.yaml...
+Downloading and installing remote packages.
+Environment for ../../../../../../../tmp/tmpy96fxuqz.yaml created (location: .snakemake/conda/6b205fae)
+Creating conda environment envs/gatk4.yaml...
+Downloading and installing remote packages.
+Environment for envs/gatk4.yaml created (location: .snakemake/conda/64dc00fb)
+Creating conda environment envs/trim_galore.yaml...
+Downloading and installing remote packages.
+Environment for envs/trim_galore.yaml created (location: .snakemake/conda/38ac8a55)
+Creating conda environment envs/multiqc.yaml...
+Downloading and installing remote packages.
+Environment for envs/multiqc.yaml created (location: .snakemake/conda/9bf667ad)
+Creating conda environment envs/bwa.yaml...
+Downloading and installing remote packages.
+Environment for envs/bwa.yaml created (location: .snakemake/conda/776acfa7)
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Provided resources: gpu=2
+Job counts:
+	count	jobs
+	1	all
+	1	bwa_mem
+	1	fastqc
+	1	gatk_ApplyBQSR
+	1	gatk_BaseRecalibrator
+	1	gatk_HaplotypeCaller_single
+	1	gatk_MarkDuplicates
+	1	multiqc
+	1	trim_galore_pe
+	9
+
+[Fri Sep 11 15:11:10 2020]
+Job 4: Undertaking quality control checks on raw sequence data for ../../fastq/NIST7035_NIST_1.fastq.gz ../../fastq/NIST7035_NIST_2.fastq.gz
+
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/6b205fae
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/6b205fae
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/6b205fae
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/6b205fae
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/6b205fae
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/6b205fae
+[Fri Sep 11 15:26:26 2020]
+Finished job 4.
+1 of 9 steps (11%) done
+
+[Fri Sep 11 15:26:26 2020]
+Job 5: Applying quality and adapter trimming to input fastq files: ../../fastq/NIST7035_NIST_1.fastq.gz ../../fastq/NIST7035_NIST_2.fastq.gz
+
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/38ac8a55
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/38ac8a55
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/38ac8a55
+[Fri Sep 11 16:34:19 2020]
+Finished job 5.
+2 of 9 steps (22%) done
+
+[Fri Sep 11 16:34:19 2020]
+Job 8: Mapping sequences against a reference human genome with BWA-MEM for ../results/trimmed/NIST7035_NIST_1_val_1.fq.gz ../results/trimmed/NIST7035_NIST_2_val_2.fq.gz
+
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/776acfa7
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/776acfa7
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/776acfa7
+Removing temporary output file ../results/trimmed/NIST7035_NIST_2_val_2.fq.gz.
+Removing temporary output file ../results/trimmed/NIST7035_NIST_1_val_1.fq.gz.
+[Fri Sep 11 21:26:28 2020]
+Finished job 8.
+3 of 9 steps (33%) done
+
+[Fri Sep 11 21:26:28 2020]
+Job 1: Compiling a HTML report for quality control checks on raw sequence data
+
+
+[Fri Sep 11 21:26:28 2020]
+Job 6: Locating and tagging duplicate reads in ../results/mapped/NIST7035_NIST_sorted.bam
+
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9bf667ad
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+[Fri Sep 11 21:26:42 2020]
+Finished job 1.
+4 of 9 steps (44%) done
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Removing temporary output file ../results/mapped/NIST7035_NIST_sorted.bam.
+[Fri Sep 11 22:26:56 2020]
+Finished job 6.
+5 of 9 steps (56%) done
+
+[Fri Sep 11 22:26:56 2020]
+Job 7: Generating a recalibration table for ../results/mapped/NIST7035_NIST_sorted_mkdups.bam
+
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+[Sat Sep 12 00:26:03 2020]
+Finished job 7.
+6 of 9 steps (67%) done
+
+[Sat Sep 12 00:26:03 2020]
+Job 2: Applying base quality score recalibration and producing a recalibrated BAM file for ../results/mapped/NIST7035_NIST_sorted_mkdups.bam
+
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Write-protecting output file ../results/mapped/NIST7035_NIST_recalibrated.bam.
+Removing temporary output file ../results/mapped/NIST7035_NIST_sorted_mkdups.bam.
+[Sat Sep 12 01:36:19 2020]
+Finished job 2.
+7 of 9 steps (78%) done
+
+[Sat Sep 12 01:36:19 2020]
+Job 3: Calling germline SNPs and indels via local re-assembly of haplotypes for ../results/mapped/NIST7035_NIST_recalibrated.bam
+
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Activating conda environment: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/64dc00fb
+Write-protecting output file ../results/called/NIST7035_NIST_raw_snps_indels.vcf.
+[Sat Sep 12 11:53:13 2020]
+Finished job 3.
+8 of 9 steps (89%) done
+
+[Sat Sep 12 11:53:13 2020]
+localrule all:
+    input: ../results/qc/multiqc_report.html, ../results/mapped/NIST7035_NIST_recalibrated.bam, ../results/called/NIST7035_NIST_raw_snps_indels.vcf
+    jobid: 0
+
+[Sat Sep 12 11:53:13 2020]
+Finished job 0.
+9 of 9 steps (100%) done
+Complete log: /store/lkemp/resource_benchmarking/resource_bench_04_thread/single/human_genomics_pipeline/workflow/.snakemake/log/2020-09-11T150941.693493.snakemake.log
