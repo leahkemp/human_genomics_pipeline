@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 snakemake \
--j 1 \
+-j 2 \
 --resources gpu=2 \
 --use-conda \
 --conda-frontend mamba \
