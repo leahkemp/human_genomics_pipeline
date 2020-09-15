@@ -1,0 +1,16 @@
+localrules directive specifies rules that are not present in the Snakefile:
+	pbrun_genotypegvcf
+	pbrun_haplotypecaller_single
+	pbrun_fq2bam
+	pbrun_haplotypecaller_cohort
+
+Building DAG of jobs...
+Creating report...
+Adding multiqc_report.html (1.1 MB).
+Adding NIST7035_NIST_recalibration_report.grp (0.92 MB).
+Could not detect mimetype for ../results/mapped/NIST7035_NIST_recalibration_report.grp, assuming text/plain.
+Could not detect mimetype for ../results/mapped/NIST7035_NIST_recalibration_report.grp, assuming text/plain.
+Downloading resources and rendering HTML.
+Loading wrapper code for rule gatk_ApplyBQSR
+Loading wrapper code for rule fastqc
+Report created: ../results/report.html.
