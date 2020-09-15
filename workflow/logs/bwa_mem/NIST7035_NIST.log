@@ -1,30 +1,30 @@
-18:41:49.779 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/0f88d427/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
-[Fri Sep 11 18:41:49 NZST 2020] SortSam  --INPUT /dev/stdin --OUTPUT ../results/mapped/NIST7035_NIST_sorted.bam --SORT_ORDER coordinate --TMP_DIR /store/lkemp/tmp --MAX_RECORDS_IN_RAM 5000000  --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
-Sep 11, 2020 6:41:50 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+18:08:07.928 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/58b549b6/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Sep 11 18:08:08 NZST 2020] SortSam  --INPUT /dev/stdin --OUTPUT ../results/mapped/NIST7035_NIST_sorted.bam --SORT_ORDER coordinate --TMP_DIR /store/lkemp/tmp --MAX_RECORDS_IN_RAM 5000000  --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Sep 11, 2020 6:08:08 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
 INFO: Failed to detect whether we are running on Google Compute Engine.
-[Fri Sep 11 18:41:50 NZST 2020] Executing as lkemp@Wintermute on Linux 4.4.0-179-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_265-b11; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.1.6.0
-INFO	2020-09-11 18:41:58	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
-INFO	2020-09-11 18:48:22	SortSam	Read    10,000,000 records.  Elapsed time: 00:06:24s.  Time for last 10,000,000:  384s.  Last read position: 9:20,345,504.  Last read name: HWI-D00119:50:H7AP8ADXX:1:1201:20588:84176
-INFO	2020-09-11 18:54:11	SortSam	Read    20,000,000 records.  Elapsed time: 00:12:13s.  Time for last 10,000,000:  349s.  Last read position: 2:128,568,544.  Last read name: HWI-D00119:50:H7AP8ADXX:1:2102:19248:64226
-INFO	2020-09-11 19:00:39	SortSam	Read    30,000,000 records.  Elapsed time: 00:18:41s.  Time for last 10,000,000:  387s.  Last read position: 1:101,805,253.  Last read name: HWI-D00119:50:H7AP8ADXX:1:2201:16151:90239
-INFO	2020-09-11 19:06:50	SortSam	Read    40,000,000 records.  Elapsed time: 00:24:52s.  Time for last 10,000,000:  370s.  Last read position: 3:19,575,160.  Last read name: HWI-D00119:50:H7AP8ADXX:2:1101:5751:45482
-INFO	2020-09-11 19:12:34	SortSam	Read    50,000,000 records.  Elapsed time: 00:30:36s.  Time for last 10,000,000:  343s.  Last read position: 11:824,020.  Last read name: HWI-D00119:50:H7AP8ADXX:2:1202:11953:16542
-INFO	2020-09-11 19:19:26	SortSam	Read    60,000,000 records.  Elapsed time: 00:37:28s.  Time for last 10,000,000:  412s.  Last read position: 8:25,101,239.  Last read name: HWI-D00119:50:H7AP8ADXX:2:2102:20733:65912
-INFO	2020-09-11 19:26:23	SortSam	Read    70,000,000 records.  Elapsed time: 00:44:24s.  Time for last 10,000,000:  416s.  Last read position: 16:58,757,879.  Last read name: HWI-D00119:50:H7AP8ADXX:2:2201:7042:64545
-INFO	2020-09-11 19:32:17	SortSam	Read    80,000,000 records.  Elapsed time: 00:50:18s.  Time for last 10,000,000:  353s.  Last read position: 17:7,126,415.  Last read name: HWI-D00119:50:H7AP8ADXX:2:2216:11499:62527
-INFO	2020-09-11 19:32:55	SortSam	Finished reading inputs, merging and writing to output now.
-INFO	2020-09-11 19:33:49	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:51:51s.  Time for last 10,000,000:   51s.  Last read position: 2:97,263,185
-INFO	2020-09-11 19:34:41	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:52:43s.  Time for last 10,000,000:   51s.  Last read position: 4:153,549,589
-INFO	2020-09-11 19:35:27	SortSam	Wrote    30,000,000 records from a sorting collection.  Elapsed time: 00:53:29s.  Time for last 10,000,000:   46s.  Last read position: 7:75,047,437
-INFO	2020-09-11 19:36:11	SortSam	Wrote    40,000,000 records from a sorting collection.  Elapsed time: 00:54:13s.  Time for last 10,000,000:   43s.  Last read position: 9:135,906,368
-INFO	2020-09-11 19:36:55	SortSam	Wrote    50,000,000 records from a sorting collection.  Elapsed time: 00:54:57s.  Time for last 10,000,000:   43s.  Last read position: 12:91,501,940
-INFO	2020-09-11 19:37:41	SortSam	Wrote    60,000,000 records from a sorting collection.  Elapsed time: 00:55:43s.  Time for last 10,000,000:   46s.  Last read position: 16:32,336,281
-INFO	2020-09-11 19:38:29	SortSam	Wrote    70,000,000 records from a sorting collection.  Elapsed time: 00:56:31s.  Time for last 10,000,000:   48s.  Last read position: 19:43,011,994
-INFO	2020-09-11 19:39:13	SortSam	Wrote    80,000,000 records from a sorting collection.  Elapsed time: 00:57:14s.  Time for last 10,000,000:   43s.  Last read position: hs37d5:20,797,933
-[Fri Sep 11 19:39:17 NZST 2020] picard.sam.SortSam done. Elapsed time: 57.46 minutes.
-Runtime.totalMemory()=20997210112
+[Fri Sep 11 18:08:08 NZST 2020] Executing as lkemp@Wintermute on Linux 4.4.0-179-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_265-b11; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.1.6.0
+INFO	2020-09-11 18:08:15	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2020-09-11 18:12:38	SortSam	Read    10,000,000 records.  Elapsed time: 00:04:23s.  Time for last 10,000,000:  263s.  Last read position: 9:20,345,504.  Last read name: HWI-D00119:50:H7AP8ADXX:1:1201:20588:84176
+INFO	2020-09-11 18:17:32	SortSam	Read    20,000,000 records.  Elapsed time: 00:09:17s.  Time for last 10,000,000:  293s.  Last read position: 2:128,568,544.  Last read name: HWI-D00119:50:H7AP8ADXX:1:2102:19248:64226
+INFO	2020-09-11 18:22:25	SortSam	Read    30,000,000 records.  Elapsed time: 00:14:09s.  Time for last 10,000,000:  292s.  Last read position: 1:101,805,253.  Last read name: HWI-D00119:50:H7AP8ADXX:1:2201:16151:90239
+INFO	2020-09-11 18:27:05	SortSam	Read    40,000,000 records.  Elapsed time: 00:18:49s.  Time for last 10,000,000:  279s.  Last read position: 3:19,575,160.  Last read name: HWI-D00119:50:H7AP8ADXX:2:1101:5751:45482
+INFO	2020-09-11 18:31:37	SortSam	Read    50,000,000 records.  Elapsed time: 00:23:22s.  Time for last 10,000,000:  272s.  Last read position: 11:824,020.  Last read name: HWI-D00119:50:H7AP8ADXX:2:1202:11953:16542
+INFO	2020-09-11 18:36:04	SortSam	Read    60,000,000 records.  Elapsed time: 00:27:48s.  Time for last 10,000,000:  266s.  Last read position: 8:25,101,239.  Last read name: HWI-D00119:50:H7AP8ADXX:2:2102:20733:65912
+INFO	2020-09-11 18:40:26	SortSam	Read    70,000,000 records.  Elapsed time: 00:32:10s.  Time for last 10,000,000:  261s.  Last read position: 16:58,757,879.  Last read name: HWI-D00119:50:H7AP8ADXX:2:2201:7042:64545
+INFO	2020-09-11 18:44:58	SortSam	Read    80,000,000 records.  Elapsed time: 00:36:42s.  Time for last 10,000,000:  272s.  Last read position: 17:7,126,415.  Last read name: HWI-D00119:50:H7AP8ADXX:2:2216:11499:62527
+INFO	2020-09-11 18:45:38	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2020-09-11 18:46:12	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:37:57s.  Time for last 10,000,000:   31s.  Last read position: 2:97,263,185
+INFO	2020-09-11 18:46:47	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:38:31s.  Time for last 10,000,000:   34s.  Last read position: 4:153,549,589
+INFO	2020-09-11 18:47:23	SortSam	Wrote    30,000,000 records from a sorting collection.  Elapsed time: 00:39:08s.  Time for last 10,000,000:   36s.  Last read position: 7:75,047,437
+INFO	2020-09-11 18:48:01	SortSam	Wrote    40,000,000 records from a sorting collection.  Elapsed time: 00:39:46s.  Time for last 10,000,000:   37s.  Last read position: 9:135,906,368
+INFO	2020-09-11 18:48:36	SortSam	Wrote    50,000,000 records from a sorting collection.  Elapsed time: 00:40:21s.  Time for last 10,000,000:   35s.  Last read position: 12:91,501,940
+INFO	2020-09-11 18:49:04	SortSam	Wrote    60,000,000 records from a sorting collection.  Elapsed time: 00:40:49s.  Time for last 10,000,000:   27s.  Last read position: 16:32,336,281
+INFO	2020-09-11 18:49:38	SortSam	Wrote    70,000,000 records from a sorting collection.  Elapsed time: 00:41:23s.  Time for last 10,000,000:   33s.  Last read position: 19:43,011,994
+INFO	2020-09-11 18:50:11	SortSam	Wrote    80,000,000 records from a sorting collection.  Elapsed time: 00:41:56s.  Time for last 10,000,000:   32s.  Last read position: hs37d5:20,797,933
+[Fri Sep 11 18:50:16 NZST 2020] picard.sam.SortSam done. Elapsed time: 42.14 minutes.
+Runtime.totalMemory()=23167762432
 Tool returned:
 0
-Using GATK jar /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/0f88d427/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar
+Using GATK jar /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/58b549b6/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar
 Running:
-    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx30g -jar /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/0f88d427/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar SortSam --MAX_RECORDS_IN_RAM=5000000 -I=/dev/stdin -O=../results/mapped/NIST7035_NIST_sorted.bam --SORT_ORDER=coordinate --TMP_DIR=/store/lkemp/tmp/
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx30g -jar /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/58b549b6/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar SortSam --MAX_RECORDS_IN_RAM=5000000 -I=/dev/stdin -O=../results/mapped/NIST7035_NIST_sorted.bam --SORT_ORDER=coordinate --TMP_DIR=/store/lkemp/tmp/

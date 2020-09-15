@@ -1,9 +1,9 @@
 [WARNING]         multiqc : MultiQC Version v1.9 now available!
 [INFO   ]         multiqc : This is MultiQC v1.8 (bc2f1ae)
 [INFO   ]         multiqc : Template    : default
-[INFO   ]         multiqc : Searching   : /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/results/qc/fastqc/NIST7035_NIST_fastqc.zip
-[INFO   ]         multiqc : Searching   : /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/results/trimmed/NIST7035_NIST_1.fastq.gz_trimming_report.txt
-[INFO   ]         multiqc : Searching   : /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/results/trimmed/NIST7035_NIST_1.fastq.gz_trimming_report.txt
+[INFO   ]         multiqc : Searching   : /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/results/qc/fastqc/NIST7035_NIST_fastqc.zip
+[INFO   ]         multiqc : Searching   : /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/results/trimmed/NIST7035_NIST_1.fastq.gz_trimming_report.txt
+[INFO   ]         multiqc : Searching   : /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/results/trimmed/NIST7035_NIST_1.fastq.gz_trimming_report.txt
 [INFO   ]        cutadapt : Found 1 reports
 [INFO   ]          fastqc : Found 1 reports
 [INFO   ]         multiqc : Compressing plot data

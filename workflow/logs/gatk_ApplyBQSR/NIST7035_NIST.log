@@ -1,533 +1,538 @@
-22:46:43.175 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9b3bdd1f/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
-Sep 11, 2020 10:46:43 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+22:08:03.019 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/bb402f1e/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Sep 11, 2020 10:08:03 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
 INFO: Failed to detect whether we are running on Google Compute Engine.
-22:46:43.575 INFO  ApplyBQSR - ------------------------------------------------------------
-22:46:43.575 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.1.8.1
-22:46:43.575 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
-22:46:43.576 INFO  ApplyBQSR - Executing as lkemp@Wintermute on Linux v4.4.0-179-generic amd64
-22:46:43.576 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_265-b11
-22:46:43.576 INFO  ApplyBQSR - Start Date/Time: 11 September 2020 10:46:43 PM
-22:46:43.576 INFO  ApplyBQSR - ------------------------------------------------------------
-22:46:43.576 INFO  ApplyBQSR - ------------------------------------------------------------
-22:46:43.577 INFO  ApplyBQSR - HTSJDK Version: 2.23.0
-22:46:43.577 INFO  ApplyBQSR - Picard Version: 2.22.8
-22:46:43.577 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
-22:46:43.578 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
-22:46:43.578 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
-22:46:43.578 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
-22:46:43.578 INFO  ApplyBQSR - Deflater: IntelDeflater
-22:46:43.578 INFO  ApplyBQSR - Inflater: IntelInflater
-22:46:43.578 INFO  ApplyBQSR - GCS max retries/reopens: 20
-22:46:43.578 INFO  ApplyBQSR - Requester pays: disabled
-22:46:43.579 INFO  ApplyBQSR - Initializing engine
-22:46:44.078 INFO  ApplyBQSR - Done initializing engine
-22:46:44.131 WARN  ApplyBQSR - This tool has only been well tested on ILLUMINA-based sequencing data. For other data use at your own risk.
-22:46:44.131 INFO  ProgressMeter - Starting traversal
-22:46:44.131 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
-22:46:54.142 INFO  ProgressMeter -            1:3831373              0.2                442000        2649615.3
-22:47:04.147 INFO  ProgressMeter -           1:16532641              0.3                982000        2943792.2
-22:47:14.156 INFO  ProgressMeter -           1:23697657              0.5               1495000        2987609.9
-22:47:24.170 INFO  ProgressMeter -           1:33742041              0.7               1980000        2967181.2
-22:47:34.177 INFO  ProgressMeter -           1:46078817              0.8               2511000        3010430.4
-22:47:44.190 INFO  ProgressMeter -           1:70709411              1.0               3030000        3027073.8
-22:47:54.199 INFO  ProgressMeter -          1:104115667              1.2               3554000        3043372.8
-22:48:04.209 INFO  ProgressMeter -          1:143209301              1.3               4120000        3086990.2
-22:48:14.220 INFO  ProgressMeter -          1:148321924              1.5               4699000        3129606.6
-22:48:24.235 INFO  ProgressMeter -          1:154541981              1.7               5276000        3162311.2
-22:48:34.235 INFO  ProgressMeter -          1:165182911              1.8               5850000        3187895.1
-22:48:44.247 INFO  ProgressMeter -          1:193053977              2.0               6422000        3207925.7
-22:48:54.251 INFO  ProgressMeter -          1:209849059              2.2               6999000        3227353.4
-22:49:04.263 INFO  ProgressMeter -          1:228879411              2.3               7560000        3236971.1
-22:49:14.276 INFO  ProgressMeter -            2:2329792              2.5               8086000        3231276.4
-22:49:24.289 INFO  ProgressMeter -           2:29383207              2.7               8653000        3241673.8
-22:49:34.783 INFO  ProgressMeter -           2:61770019              2.8               9182000        3228343.2
-22:49:44.794 INFO  ProgressMeter -           2:87758450              3.0               9767000        3243736.9
-22:49:54.796 INFO  ProgressMeter -          2:109381999              3.2              10356000        3258926.7
-22:50:04.805 INFO  ProgressMeter -          2:131340442              3.3              10938000        3270378.8
-22:50:14.817 INFO  ProgressMeter -          2:165430514              3.5              11486000        3271028.9
-22:50:24.828 INFO  ProgressMeter -          2:192744997              3.7              12075000        3282796.2
-22:50:34.840 INFO  ProgressMeter -          2:220115903              3.8              12705000        3304162.4
-22:50:44.846 INFO  ProgressMeter -          2:242164096              4.0              13290000        3312631.1
-22:50:54.851 INFO  ProgressMeter -           3:30322237              4.2              13848000        3313989.0
-22:51:04.859 INFO  ProgressMeter -           3:48612666              4.3              14447000        3324626.9
-22:51:14.867 INFO  ProgressMeter -           3:62307576              4.5              15056000        3336682.2
-22:51:24.875 INFO  ProgressMeter -          3:114057507              4.7              15645000        3343627.4
-22:51:34.878 INFO  ProgressMeter -          3:129389374              4.8              16069000        3316090.3
-22:51:44.894 INFO  ProgressMeter -          3:164629830              5.0              16665000        3324555.6
-22:51:54.893 INFO  ProgressMeter -          3:195511173              5.2              17253000        3331102.3
-22:52:04.898 INFO  ProgressMeter -            4:9232695              5.3              17842000        3337386.1
-22:52:14.908 INFO  ProgressMeter -           4:40814096              5.5              18441000        3345033.1
-22:52:24.915 INFO  ProgressMeter -           4:79367924              5.7              18998000        3344885.2
-22:52:34.916 INFO  ProgressMeter -          4:119954448              5.8              19595000        3351635.2
-22:52:44.921 INFO  ProgressMeter -          4:169204636              6.0              20202000        3359636.8
-22:52:54.928 INFO  ProgressMeter -           5:21483756              6.2              20816000        3368312.0
-22:53:04.933 INFO  ProgressMeter -           5:54948305              6.3              21402000        3372146.2
-22:53:14.939 INFO  ProgressMeter -           5:75912142              6.5              22010000        3379152.9
-22:53:24.951 INFO  ProgressMeter -          5:121487991              6.7              22609000        3384420.4
-22:53:34.951 INFO  ProgressMeter -          5:140724642              6.8              23230000        3392726.7
-22:53:44.963 INFO  ProgressMeter -          5:159095935              7.0              23727000        3382878.2
-22:53:54.964 INFO  ProgressMeter -          5:175524353              7.2              23967000        3337774.4
-22:54:04.989 INFO  ProgressMeter -          5:180230136              7.3              24246000        3299845.5
-22:54:14.992 INFO  ProgressMeter -           6:26413480              7.5              24753000        3294097.3
-22:54:25.009 INFO  ProgressMeter -           6:33333027              7.7              25332000        3297907.9
-22:54:35.020 INFO  ProgressMeter -           6:48181866              7.8              25941000        3305365.0
-22:54:45.021 INFO  ProgressMeter -           6:93085592              8.0              26548000        3312365.2
-22:54:55.026 INFO  ProgressMeter -          6:132212027              8.2              27104000        3312806.2
-22:55:05.032 INFO  ProgressMeter -          6:162992302              8.3              27709000        3319099.0
-22:55:15.034 INFO  ProgressMeter -           7:19156869              8.5              28286000        3321883.0
-22:55:25.037 INFO  ProgressMeter -           7:45006362              8.7              28862000        3324438.6
-22:55:35.038 INFO  ProgressMeter -           7:63303608              8.8              29449000        3328159.8
-22:55:45.052 INFO  ProgressMeter -           7:75115255              9.0              30013000        3329106.0
-22:55:55.052 INFO  ProgressMeter -           7:99690966              9.2              30575000        3329884.6
-22:56:05.062 INFO  ProgressMeter -          7:102392144              9.3              31078000        3324265.1
-22:56:15.066 INFO  ProgressMeter -          7:131099324              9.5              31618000        3322765.9
-22:56:25.066 INFO  ProgressMeter -          7:150692378              9.7              32199000        3325570.0
-22:56:35.073 INFO  ProgressMeter -            8:7616101              9.8              32802000        3330484.8
-22:56:45.074 INFO  ProgressMeter -           8:23485958             10.0              33349000        3329666.9
-22:56:55.076 INFO  ProgressMeter -           8:59500710             10.2              33952000        3334375.4
-22:57:05.086 INFO  ProgressMeter -           8:86574543             10.3              34562000        3339565.7
-22:57:15.088 INFO  ProgressMeter -           8:86787816             10.5              35184000        3345774.8
-22:57:25.101 INFO  ProgressMeter -           8:90251083             10.7              35807000        3351826.1
-22:57:35.117 INFO  ProgressMeter -          8:133900528             10.8              36395000        3354455.2
-22:57:45.123 INFO  ProgressMeter -            9:6007501             11.0              36993000        3357952.9
-22:57:55.151 INFO  ProgressMeter -           9:37861351             11.2              37593000        3361424.9
-22:58:05.166 INFO  ProgressMeter -           9:69655430             11.4              38168000        3362651.5
-22:58:15.167 INFO  ProgressMeter -           9:97063224             11.5              38777000        3366857.9
-22:58:25.174 INFO  ProgressMeter -          9:117088608             11.7              39320000        3365276.3
-22:58:35.178 INFO  ProgressMeter -          9:133560799             11.9              39888000        3365853.5
-22:58:45.187 INFO  ProgressMeter -           10:3154395             12.0              40486000        3368892.3
-22:58:55.191 INFO  ProgressMeter -          10:38343322             12.2              41083000        3371788.9
-22:59:05.197 INFO  ProgressMeter -          10:65662321             12.4              41661000        3373059.9
-22:59:15.204 INFO  ProgressMeter -          10:88993117             12.5              42252000        3375331.0
-22:59:25.220 INFO  ProgressMeter -         10:104934640             12.7              42844000        3377581.3
-22:59:35.237 INFO  ProgressMeter -         10:134016205             12.9              43422000        3378679.5
-22:59:45.237 INFO  ProgressMeter -           11:5068387             13.0              43942000        3375367.7
-22:59:55.250 INFO  ProgressMeter -          11:31808976             13.2              44528000        3377094.2
-23:00:05.252 INFO  ProgressMeter -          11:60641147             13.4              45134000        3380317.6
-23:00:15.255 INFO  ProgressMeter -          11:66001506             13.5              45697000        3380272.3
-23:00:25.266 INFO  ProgressMeter -          11:77413134             13.7              46287000        3382176.4
-23:00:35.274 INFO  ProgressMeter -         11:108198214             13.9              46791000        3377834.4
-23:00:45.281 INFO  ProgressMeter -         11:126145977             14.0              47384000        3379948.1
-23:00:55.281 INFO  ProgressMeter -           12:8211956             14.2              47929000        3378652.4
-23:01:05.289 INFO  ProgressMeter -          12:33205544             14.4              48531000        3381334.6
-23:01:15.288 INFO  ProgressMeter -          12:53662853             14.5              49139000        3384395.7
-23:01:25.303 INFO  ProgressMeter -          12:69073383             14.7              49720000        3385495.0
-23:01:35.307 INFO  ProgressMeter -         12:106460123             14.9              50307000        3387011.5
-23:01:45.314 INFO  ProgressMeter -         12:122803879             15.0              50889000        3388150.2
-23:01:55.325 INFO  ProgressMeter -          13:28874723             15.2              51496000        3390891.5
-23:02:05.339 INFO  ProgressMeter -          13:61984582             15.4              52053000        3390309.2
-23:02:15.355 INFO  ProgressMeter -          14:19413137             15.5              52655000        3392635.3
-23:02:25.365 INFO  ProgressMeter -          14:38792481             15.7              53246000        3394228.6
-23:02:35.373 INFO  ProgressMeter -          14:68238890             15.9              53805000        3393777.2
-23:02:45.382 INFO  ProgressMeter -          14:91077105             16.0              54295000        3389021.2
-23:02:55.417 INFO  ProgressMeter -          15:21936127             16.2              54895000        3391071.2
-23:03:05.429 INFO  ProgressMeter -          15:34649788             16.4              55441000        3389860.6
-23:03:15.436 INFO  ProgressMeter -          15:46973110             16.5              56006000        3389838.0
-23:03:25.438 INFO  ProgressMeter -          15:68886172             16.7              56590000        3390971.4
-23:03:35.448 INFO  ProgressMeter -          15:82731109             16.9              57202000        3393713.3
-23:03:45.449 INFO  ProgressMeter -         15:100263773             17.0              57787000        3394851.9
-23:03:55.460 INFO  ProgressMeter -           16:3118819             17.2              58385000        3396685.2
-23:04:05.490 INFO  ProgressMeter -          16:18430649             17.4              58961000        3397157.0
-23:04:15.502 INFO  ProgressMeter -          16:28116063             17.5              59499000        3395512.5
-23:04:25.507 INFO  ProgressMeter -          16:32899767             17.7              60042000        3394197.7
-23:04:35.510 INFO  ProgressMeter -          16:67165194             17.9              60609000        3394264.2
-23:04:45.520 INFO  ProgressMeter -          16:78013185             18.0              61157000        3393247.0
-23:04:55.520 INFO  ProgressMeter -           17:2566957             18.2              61744000        3394426.7
-23:05:05.521 INFO  ProgressMeter -           17:9298129             18.4              62315000        3394713.4
-23:05:15.525 INFO  ProgressMeter -          17:20905976             18.5              62922000        3396923.1
-23:05:25.532 INFO  ProgressMeter -          17:36287654             18.7              63518000        3398498.8
-23:05:35.546 INFO  ProgressMeter -          17:41566751             18.9              64074000        3397904.4
-23:05:45.552 INFO  ProgressMeter -          17:50008392             19.0              64675000        3399709.7
-23:05:55.556 INFO  ProgressMeter -          17:67951504             19.2              65273000        3401333.1
-23:06:05.558 INFO  ProgressMeter -          17:78935276             19.4              65815000        3400044.4
-23:06:15.558 INFO  ProgressMeter -          18:14376358             19.5              66328000        3397295.3
-23:06:25.559 INFO  ProgressMeter -          18:55274864             19.7              66935000        3399363.7
-23:06:35.565 INFO  ProgressMeter -           19:2430845             19.9              67531000        3400826.2
-23:06:45.585 INFO  ProgressMeter -           19:9069711             20.0              68104000        3401081.9
-23:06:55.593 INFO  ProgressMeter -          19:15278108             20.2              68633000        3399185.0
-23:07:05.594 INFO  ProgressMeter -          19:33628619             20.4              69245000        3401415.7
-23:07:15.608 INFO  ProgressMeter -          19:41381418             20.5              69869000        3404158.9
-23:07:25.614 INFO  ProgressMeter -          19:49378071             20.7              70467000        3405623.3
-23:07:35.616 INFO  ProgressMeter -          19:55543670             20.9              71058000        3406739.5
-23:07:45.626 INFO  ProgressMeter -          20:10015832             21.0              71654000        3408051.6
-23:07:55.631 INFO  ProgressMeter -          20:35584748             21.2              72270000        3410302.8
-23:08:05.642 INFO  ProgressMeter -          20:57415085             21.4              72853000        3410960.5
-23:08:15.658 INFO  ProgressMeter -          21:33078579             21.5              73435000        3411543.1
-23:08:25.660 INFO  ProgressMeter -          22:16287620             21.7              74055000        3413907.8
-23:08:35.672 INFO  ProgressMeter -          22:22863330             21.9              74618000        3413605.4
-23:08:45.681 INFO  ProgressMeter -          22:36560695             22.0              75244000        3416173.0
-23:08:55.688 INFO  ProgressMeter -          22:44220722             22.2              75730000        3412398.7
-23:09:05.690 INFO  ProgressMeter -            X:7137475             22.4              76206000        3408243.7
-23:09:15.691 INFO  ProgressMeter -           X:20195205             22.5              76478000        3395099.0
-23:09:25.705 INFO  ProgressMeter -           X:47045512             22.7              76868000        3387317.5
-23:09:35.718 INFO  ProgressMeter -           X:68059414             22.9              77460000        3388483.6
-23:09:45.723 INFO  ProgressMeter -          X:101449217             23.0              78004000        3387572.7
-23:09:55.737 INFO  ProgressMeter -          X:129535878             23.2              78543000        3386432.7
-23:10:05.745 INFO  ProgressMeter -          X:153699493             23.4              79125000        3387166.5
-23:10:15.749 INFO  ProgressMeter -       hs37d5:3911515             23.5              79684000        3386924.4
-23:10:25.749 INFO  ProgressMeter -      hs37d5:34982718             23.7              80246000        3386817.0
-23:10:25.880 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
+22:08:03.393 INFO  ApplyBQSR - ------------------------------------------------------------
+22:08:03.394 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.1.8.1
+22:08:03.394 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
+22:08:03.394 INFO  ApplyBQSR - Executing as lkemp@Wintermute on Linux v4.4.0-179-generic amd64
+22:08:03.394 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_265-b11
+22:08:03.394 INFO  ApplyBQSR - Start Date/Time: 11 September 2020 10:08:02 PM
+22:08:03.395 INFO  ApplyBQSR - ------------------------------------------------------------
+22:08:03.395 INFO  ApplyBQSR - ------------------------------------------------------------
+22:08:03.395 INFO  ApplyBQSR - HTSJDK Version: 2.23.0
+22:08:03.395 INFO  ApplyBQSR - Picard Version: 2.22.8
+22:08:03.396 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+22:08:03.396 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+22:08:03.396 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+22:08:03.396 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+22:08:03.396 INFO  ApplyBQSR - Deflater: IntelDeflater
+22:08:03.396 INFO  ApplyBQSR - Inflater: IntelInflater
+22:08:03.396 INFO  ApplyBQSR - GCS max retries/reopens: 20
+22:08:03.396 INFO  ApplyBQSR - Requester pays: disabled
+22:08:03.396 INFO  ApplyBQSR - Initializing engine
+22:08:03.832 INFO  ApplyBQSR - Done initializing engine
+22:08:03.885 WARN  ApplyBQSR - This tool has only been well tested on ILLUMINA-based sequencing data. For other data use at your own risk.
+22:08:03.886 INFO  ProgressMeter - Starting traversal
+22:08:03.886 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+22:08:13.908 INFO  ProgressMeter -            1:2461057              0.2                370000        2215347.8
+22:08:23.909 INFO  ProgressMeter -           1:12203335              0.3                753000        2256517.8
+22:08:33.917 INFO  ProgressMeter -           1:16976052              0.5               1133000        2263736.3
+22:08:43.927 INFO  ProgressMeter -           1:27690707              0.7               1726000        2586349.0
+22:08:53.931 INFO  ProgressMeter -           1:41086549              0.8               2280000        2733594.4
+22:09:03.943 INFO  ProgressMeter -           1:57254644              1.0               2827000        2824316.9
+22:09:13.948 INFO  ProgressMeter -           1:95286099              1.2               3433000        2940009.4
+22:09:23.963 INFO  ProgressMeter -          1:115401262              1.3               3910000        2929716.8
+22:09:33.970 INFO  ProgressMeter -          1:146231080              1.5               4479000        2983215.7
+22:09:43.986 INFO  ProgressMeter -          1:152187234              1.7               5053000        3028771.2
+22:09:54.003 INFO  ProgressMeter -          1:156812708              1.8               5529000        3012641.2
+22:10:04.009 INFO  ProgressMeter -          1:173941574              2.0               6070000        3031917.6
+22:10:14.010 INFO  ProgressMeter -          1:200145194              2.2               6505000        2999446.7
+22:10:24.012 INFO  ProgressMeter -          1:214560131              2.3               7108000        3043568.2
+22:10:34.020 INFO  ProgressMeter -          1:231965429              2.5               7639000        3052893.1
+22:10:44.033 INFO  ProgressMeter -            2:1312237              2.7               8063000        3020868.5
+22:10:54.040 INFO  ProgressMeter -           2:26951636              2.8               8496000        2995874.3
+22:11:04.046 INFO  ProgressMeter -           2:44028709              3.0               8910000        2967378.8
+22:11:14.063 INFO  ProgressMeter -           2:70124595              3.2               9329000        2943273.6
+22:11:24.073 INFO  ProgressMeter -           2:91845785              3.3               9840000        2949242.5
+22:11:34.073 INFO  ProgressMeter -          2:111204586              3.5              10435000        2978776.0
+22:11:44.078 INFO  ProgressMeter -          2:131248167              3.7              10924000        2976688.4
+22:11:54.091 INFO  ProgressMeter -          2:167149693              3.8              11528000        3004626.3
+22:12:04.110 INFO  ProgressMeter -          2:192550802              4.0              12071000        3014936.1
+22:12:14.119 INFO  ProgressMeter -          2:218941137              4.2              12576000        3015429.6
+22:12:24.128 INFO  ProgressMeter -          2:240969169              4.3              13204000        3044243.4
+22:12:34.137 INFO  ProgressMeter -           3:14751101              4.5              13651000        3030738.1
+22:12:44.152 INFO  ProgressMeter -           3:44869717              4.7              14224000        3045107.1
+22:12:54.165 INFO  ProgressMeter -           3:52541671              4.8              14834000        3066153.6
+22:13:04.176 INFO  ProgressMeter -           3:81663045              5.0              15261000        3049252.4
+22:13:14.194 INFO  ProgressMeter -          3:124946382              5.2              15888000        3072054.4
+22:13:24.203 INFO  ProgressMeter -          3:148749780              5.3              16439000        3079262.1
+22:13:34.218 INFO  ProgressMeter -          3:183207440              5.5              16921000        3073462.7
+22:13:44.226 INFO  ProgressMeter -            4:1950242              5.7              17532000        3090791.6
+22:13:54.242 INFO  ProgressMeter -            4:9261335              5.8              17938000        3071961.1
+22:14:04.261 INFO  ProgressMeter -           4:15704560              6.0              18162000        3023858.5
+22:14:14.269 INFO  ProgressMeter -           4:45560010              6.2              18501000        2997067.9
+22:14:24.273 INFO  ProgressMeter -           4:72204638              6.3              18845000        2972506.9
+22:14:34.273 INFO  ProgressMeter -           4:90944746              6.5              19215000        2953223.3
+22:14:44.292 INFO  ProgressMeter -          4:113187000              6.7              19480000        2919044.5
+22:14:54.308 INFO  ProgressMeter -          4:141481052              6.8              19841000        2900575.5
+22:15:04.310 INFO  ProgressMeter -          4:186379438              7.0              20398000        2911068.1
+22:15:14.319 INFO  ProgressMeter -           5:31823069              7.2              20909000        2914606.7
+22:15:24.325 INFO  ProgressMeter -           5:58334719              7.3              21451000        2922227.4
+22:15:34.327 INFO  ProgressMeter -           5:76925366              7.5              22040000        2935789.6
+22:15:44.341 INFO  ProgressMeter -          5:114857170              7.7              22540000        2937114.0
+22:15:54.341 INFO  ProgressMeter -          5:139260460              7.8              23003000        2933719.3
+22:16:04.352 INFO  ProgressMeter -          5:149440442              8.0              23484000        2932659.0
+22:16:14.364 INFO  ProgressMeter -          5:172511081              8.2              23912000        2925146.5
+22:16:24.373 INFO  ProgressMeter -           6:10912889              8.3              24505000        2937744.5
+22:16:34.387 INFO  ProgressMeter -           6:30457535              8.5              24947000        2932060.9
+22:16:44.392 INFO  ProgressMeter -           6:37603354              8.7              25557000        2946023.6
+22:16:54.400 INFO  ProgressMeter -           6:49928143              8.8              25960000        2936026.1
+22:17:04.404 INFO  ProgressMeter -           6:87797702              9.0              26445000        2935522.8
+22:17:14.410 INFO  ProgressMeter -          6:113415540              9.2              26851000        2926411.9
+22:17:24.414 INFO  ProgressMeter -          6:138745738              9.3              27230000        2914757.0
+22:17:34.424 INFO  ProgressMeter -          6:159172975              9.5              27594000        2901907.9
+22:17:44.433 INFO  ProgressMeter -            7:5273057              9.7              28050000        2898990.1
+22:17:54.450 INFO  ProgressMeter -           7:28861391              9.8              28472000        2892697.3
+22:18:04.458 INFO  ProgressMeter -           7:45848124             10.0              28908000        2888046.7
+22:18:14.482 INFO  ProgressMeter -           7:56883981             10.2              29327000        2881812.0
+22:18:24.496 INFO  ProgressMeter -           7:72708184             10.3              29730000        2874273.5
+22:18:34.497 INFO  ProgressMeter -           7:78651821             10.5              30179000        2871405.7
+22:18:44.527 INFO  ProgressMeter -           7:99818071             10.7              30612000        2867008.0
+22:18:54.547 INFO  ProgressMeter -          7:102123868             10.8              30957000        2854670.6
+22:19:04.577 INFO  ProgressMeter -          7:121941844             11.0              31382000        2849929.6
+22:19:14.578 INFO  ProgressMeter -          7:140257973             11.2              31836000        2848047.8
+22:19:24.589 INFO  ProgressMeter -          7:151884234             11.3              32274000        2844769.1
+22:19:34.604 INFO  ProgressMeter -            8:7584126             11.5              32727000        2842872.0
+22:19:44.609 INFO  ProgressMeter -           8:17973550             11.7              33183000        2841326.5
+22:19:54.618 INFO  ProgressMeter -           8:37612669             11.8              33596000        2836174.5
+22:20:04.624 INFO  ProgressMeter -           8:66547392             12.0              34028000        2832767.0
+22:20:14.624 INFO  ProgressMeter -           8:86571767             12.2              34499000        2832670.5
+22:20:24.656 INFO  ProgressMeter -           8:86758643             12.3              34961000        2831733.0
+22:20:34.669 INFO  ProgressMeter -           8:86803540             12.5              35353000        2825290.4
+22:20:44.673 INFO  ProgressMeter -           8:90770035             12.7              35809000        2824101.9
+22:20:54.682 INFO  ProgressMeter -          8:124163983             12.8              36249000        2821680.4
+22:21:04.689 INFO  ProgressMeter -          8:145137517             13.0              36687000        2819174.6
+22:21:14.690 INFO  ProgressMeter -           9:18892436             13.2              37130000        2817136.5
+22:21:24.703 INFO  ProgressMeter -           9:36735132             13.3              37557000        2813904.8
+22:21:34.705 INFO  ProgressMeter -           9:66546647             13.5              38004000        2812267.6
+22:21:44.731 INFO  ProgressMeter -           9:87491825             13.7              38542000        2817246.6
+22:21:54.766 INFO  ProgressMeter -          9:110250008             13.8              39097000        2823295.8
+22:22:04.782 INFO  ProgressMeter -          9:128246792             14.0              39593000        2825061.4
+22:22:14.795 INFO  ProgressMeter -          9:138413876             14.2              40138000        2830247.2
+22:22:24.806 INFO  ProgressMeter -          10:15876550             14.3              40710000        2837197.4
+22:22:34.824 INFO  ProgressMeter -          10:47161134             14.5              41265000        2842800.3
+22:22:44.824 INFO  ProgressMeter -          10:72360143             14.7              41801000        2847036.7
+22:22:54.830 INFO  ProgressMeter -          10:90558947             14.8              42307000        2849138.5
+22:23:04.839 INFO  ProgressMeter -         10:105793968             15.0              42894000        2856578.4
+22:23:14.848 INFO  ProgressMeter -         10:134230680             15.2              43438000        2861019.4
+22:23:24.866 INFO  ProgressMeter -           11:5776500             15.3              43968000        2864427.0
+22:23:34.879 INFO  ProgressMeter -          11:31452365             15.5              44523000        2869390.9
+22:23:44.892 INFO  ProgressMeter -          11:60102499             15.7              45110000        2876286.5
+22:23:54.951 INFO  ProgressMeter -          11:65745928             15.9              45677000        2881635.7
+22:24:04.962 INFO  ProgressMeter -          11:76261981             16.0              46238000        2886642.6
+22:24:14.972 INFO  ProgressMeter -         11:108380990             16.2              46801000        2891672.7
+22:24:24.977 INFO  ProgressMeter -         11:126300985             16.4              47394000        2898449.7
+22:24:34.985 INFO  ProgressMeter -           12:8388301             16.5              47967000        2903870.3
+22:24:44.994 INFO  ProgressMeter -          12:34318501             16.7              48539000        2909116.7
+22:24:54.999 INFO  ProgressMeter -          12:53494500             16.9              49118000        2914689.1
+22:25:05.010 INFO  ProgressMeter -          12:66308875             17.0              49675000        2918842.4
+22:25:15.022 INFO  ProgressMeter -         12:104382545             17.2              50260000        2924541.5
+22:25:25.038 INFO  ProgressMeter -         12:121622200             17.4              50818000        2928566.6
+22:25:35.060 INFO  ProgressMeter -          13:21417029             17.5              51317000        2929127.7
+22:25:45.059 INFO  ProgressMeter -          13:48651296             17.7              51863000        2932396.5
+22:25:55.059 INFO  ProgressMeter -         13:103486682             17.9              52441000        2937396.7
+22:26:05.072 INFO  ProgressMeter -          14:24626901             18.0              52994000        2940881.6
+22:26:15.073 INFO  ProgressMeter -          14:55765667             18.2              53512000        2942413.1
+22:26:25.072 INFO  ProgressMeter -          14:75498768             18.4              54053000        2945170.0
+22:26:35.081 INFO  ProgressMeter -         14:102807972             18.5              54629000        2949743.3
+22:26:45.091 INFO  ProgressMeter -          15:28919149             18.7              55205000        2954234.9
+22:26:55.098 INFO  ProgressMeter -          15:43122122             18.9              55786000        2958914.9
+22:27:05.099 INFO  ProgressMeter -          15:62234079             19.0              56354000        2962850.0
+22:27:15.099 INFO  ProgressMeter -          15:75589601             19.2              56919000        2966560.5
+22:27:25.099 INFO  ProgressMeter -          15:86407979             19.4              57494000        2970721.1
+22:27:35.104 INFO  ProgressMeter -            16:568984             19.5              57984000        2970448.7
+22:27:45.117 INFO  ProgressMeter -           16:8397435             19.7              58577000        2975387.5
+22:27:55.128 INFO  ProgressMeter -          16:21466551             19.9              59178000        2980653.8
+22:28:05.133 INFO  ProgressMeter -          16:29998863             20.0              59734000        2983602.0
+22:28:15.145 INFO  ProgressMeter -          16:47922022             20.2              60185000        2981280.6
+22:28:25.152 INFO  ProgressMeter -          16:68338028             20.4              60759000        2985052.4
+22:28:35.156 INFO  ProgressMeter -          16:87732334             20.5              61353000        2989742.3
+22:28:45.157 INFO  ProgressMeter -           17:4856499             20.7              61928000        2993450.3
+22:28:55.168 INFO  ProgressMeter -          17:15640834             20.9              62485000        2996209.5
+22:29:05.171 INFO  ProgressMeter -          17:27182095             21.0              63074000        3000466.2
+22:29:15.172 INFO  ProgressMeter -          17:37783226             21.2              63653000        3004186.3
+22:29:25.180 INFO  ProgressMeter -          17:42991002             21.4              64200000        3006335.8
+22:29:35.183 INFO  ProgressMeter -          17:56429545             21.5              64782000        3010092.2
+22:29:45.194 INFO  ProgressMeter -          17:72956187             21.7              65396000        3015245.4
+22:29:55.207 INFO  ProgressMeter -          17:80332335             21.9              65974000        3018668.2
+22:30:05.223 INFO  ProgressMeter -          18:30253082             22.0              66565000        3022622.6
+22:30:15.224 INFO  ProgressMeter -          18:74269955             22.2              67170000        3027182.4
+22:30:25.230 INFO  ProgressMeter -           19:5649480             22.4              67779000        3031842.0
+22:30:35.257 INFO  ProgressMeter -          19:11222175             22.5              68286000        3031856.6
+22:30:45.269 INFO  ProgressMeter -          19:18256615             22.7              68883000        3035868.7
+22:30:55.284 INFO  ProgressMeter -          19:36486648             22.9              69448000        3038417.7
+22:31:05.294 INFO  ProgressMeter -          19:43519390             23.0              70016000        3041073.3
+22:31:15.307 INFO  ProgressMeter -          19:50367370             23.2              70623000        3045361.5
+22:31:25.319 INFO  ProgressMeter -          19:57766104             23.4              71225000        3049378.7
+22:31:35.322 INFO  ProgressMeter -          20:21324821             23.5              71817000        3052935.5
+22:31:45.324 INFO  ProgressMeter -          20:40827891             23.7              72414000        3056651.1
+22:31:55.324 INFO  ProgressMeter -          20:61892186             23.9              73028000        3061033.7
+22:32:05.327 INFO  ProgressMeter -          21:39754515             24.0              73617000        3064308.6
+22:32:15.339 INFO  ProgressMeter -          22:18839191             24.2              74192000        3066942.6
+22:32:25.354 INFO  ProgressMeter -          22:24236677             24.4              74713000        3067313.1
+22:32:35.370 INFO  ProgressMeter -          22:36976981             24.5              75271000        3069189.4
+22:32:45.377 INFO  ProgressMeter -          22:50280372             24.7              75886000        3073363.3
+22:32:55.392 INFO  ProgressMeter -           X:23205164             24.9              76512000        3077909.2
+22:33:05.392 INFO  ProgressMeter -           X:49317432             25.0              77103000        3081026.6
+22:33:15.405 INFO  ProgressMeter -           X:73952804             25.2              77658000        3082649.4
+22:33:25.409 INFO  ProgressMeter -          X:111624883             25.4              78239000        3085292.2
+22:33:35.409 INFO  ProgressMeter -          X:147030444             25.5              78813000        3087634.4
+22:33:45.408 INFO  ProgressMeter -     GL000218.1:40012             25.7              79384000        3089829.4
+22:33:55.424 INFO  ProgressMeter -      hs37d5:19353187             25.9              79967000        3092430.3
+22:34:00.218 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
 
-23:10:25.880 INFO  ProgressMeter -             unmapped             23.7              80252081        3386761.6
-23:10:25.880 INFO  ProgressMeter - Traversal complete. Processed 80252081 total reads in 23.7 minutes.
-23:10:25.929 INFO  ApplyBQSR - Shutting down engine
-[11 September 2020 11:10:25 PM] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 23.71 minutes.
-Runtime.totalMemory()=1910505472
-Using GATK jar /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9b3bdd1f/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar
+22:34:00.219 INFO  ProgressMeter -             unmapped             25.9              80252081        3093893.1
+22:34:00.219 INFO  ProgressMeter - Traversal complete. Processed 80252081 total reads in 25.9 minutes.
+22:34:00.241 INFO  ApplyBQSR - Shutting down engine
+[11 September 2020 10:34:00 PM] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 25.95 minutes.
+Runtime.totalMemory()=1465384960
+Using GATK jar /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/bb402f1e/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar
 Running:
-    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx30g -jar /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9b3bdd1f/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar ApplyBQSR -R /store/lkemp/publicData/b37/human_g1k_v37_decoy.fasta -I ../results/mapped/NIST7035_NIST_sorted_mkdups.bam --bqsr-recal-file ../results/mapped/NIST7035_NIST_recalibration_report.grp -O ../results/mapped/NIST7035_NIST_recalibrated.bam
-23:10:37.308 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9b3bdd1f/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
-Sep 11, 2020 11:10:37 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx30g -jar /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/bb402f1e/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar ApplyBQSR -R /store/lkemp/publicData/b37/human_g1k_v37_decoy.fasta -I ../results/mapped/NIST7035_NIST_sorted_mkdups.bam --bqsr-recal-file ../results/mapped/NIST7035_NIST_recalibration_report.grp -O ../results/mapped/NIST7035_NIST_recalibrated.bam
+22:34:11.593 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/bb402f1e/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Sep 11, 2020 10:34:12 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
 INFO: Failed to detect whether we are running on Google Compute Engine.
-23:10:37.704 INFO  ApplyBQSR - ------------------------------------------------------------
-23:10:37.704 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.1.8.1
-23:10:37.705 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
-23:10:37.705 INFO  ApplyBQSR - Executing as lkemp@Wintermute on Linux v4.4.0-179-generic amd64
-23:10:37.705 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_265-b11
-23:10:37.705 INFO  ApplyBQSR - Start Date/Time: 11 September 2020 11:10:37 PM
-23:10:37.705 INFO  ApplyBQSR - ------------------------------------------------------------
-23:10:37.705 INFO  ApplyBQSR - ------------------------------------------------------------
-23:10:37.706 INFO  ApplyBQSR - HTSJDK Version: 2.23.0
-23:10:37.706 INFO  ApplyBQSR - Picard Version: 2.22.8
-23:10:37.706 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
-23:10:37.706 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
-23:10:37.706 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
-23:10:37.706 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
-23:10:37.706 INFO  ApplyBQSR - Deflater: IntelDeflater
-23:10:37.706 INFO  ApplyBQSR - Inflater: IntelInflater
-23:10:37.706 INFO  ApplyBQSR - GCS max retries/reopens: 20
-23:10:37.706 INFO  ApplyBQSR - Requester pays: disabled
-23:10:37.706 INFO  ApplyBQSR - Initializing engine
-23:10:38.149 INFO  ApplyBQSR - Done initializing engine
-23:10:39.605 WARN  ApplyBQSR - This tool has only been well tested on ILLUMINA-based sequencing data. For other data use at your own risk.
-23:10:39.605 INFO  ProgressMeter - Starting traversal
-23:10:39.605 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
-23:10:49.606 INFO  ProgressMeter -            1:6479710              0.2                500000        3000000.0
-23:10:59.611 INFO  ProgressMeter -           1:16921413              0.3               1071000        3212197.0
-23:11:09.616 INFO  ProgressMeter -           1:24434105              0.5               1543000        3084971.7
-23:11:19.615 INFO  ProgressMeter -           1:36773998              0.7               2093000        3138715.3
-23:11:29.621 INFO  ProgressMeter -           1:51425721              0.8               2644000        3171848.4
-23:11:39.637 INFO  ProgressMeter -           1:84878061              1.0               3196000        3194296.4
-23:11:49.647 INFO  ProgressMeter -          1:111442052              1.2               3775000        3233820.2
-23:11:59.659 INFO  ProgressMeter -          1:145347402              1.3               4363000        3270042.7
-23:12:09.667 INFO  ProgressMeter -          1:150618589              1.5               4905000        3267748.9
-23:12:19.671 INFO  ProgressMeter -          1:156347141              1.7               5479000        3285231.7
-23:12:29.687 INFO  ProgressMeter -          1:173772420              1.8               6052000        3298631.9
-23:12:39.720 INFO  ProgressMeter -          1:202311039              2.0               6648000        3320845.2
-23:12:49.724 INFO  ProgressMeter -          1:218507111              2.2               7162000        3302540.8
-23:12:59.731 INFO  ProgressMeter -          1:235274697              2.3               7686000        3291061.6
-23:13:09.732 INFO  ProgressMeter -           2:11742734              2.5               8231000        3289614.8
-23:13:19.749 INFO  ProgressMeter -           2:37230722              2.7               8780000        3289539.4
-23:13:29.760 INFO  ProgressMeter -           2:70339500              2.8               9337000        3292409.9
-23:13:39.775 INFO  ProgressMeter -           2:96462873              3.0               9928000        3306229.2
-23:13:49.777 INFO  ProgressMeter -          2:113127367              3.2              10512000        3316576.6
-23:13:59.788 INFO  ProgressMeter -          2:135893172              3.3              11100000        3326972.5
-23:14:09.796 INFO  ProgressMeter -          2:172822763              3.5              11665000        3329828.6
-23:14:19.810 INFO  ProgressMeter -          2:203426745              3.7              12271000        3343520.8
-23:14:29.816 INFO  ProgressMeter -          2:228450350              3.8              12876000        3355892.4
-23:14:39.817 INFO  ProgressMeter -            3:9952579              4.0              13485000        3368274.7
-23:14:49.827 INFO  ProgressMeter -           3:39187952              4.2              14071000        3374057.3
-23:14:59.832 INFO  ProgressMeter -           3:49774679              4.3              14615000        3369750.3
-23:15:09.856 INFO  ProgressMeter -           3:72978179              4.5              15188000        3371976.4
-23:15:19.872 INFO  ProgressMeter -          3:119243982              4.7              15694000        3359796.2
-23:15:29.879 INFO  ProgressMeter -          3:138123799              4.8              16269000        3362822.7
-23:15:39.893 INFO  ProgressMeter -          3:179334740              5.0              16858000        3368377.6
-23:15:49.892 INFO  ProgressMeter -             4:655961              5.2              17442000        3372748.5
-23:15:59.907 INFO  ProgressMeter -            4:9365080              5.3              18055000        3382120.6
-23:16:09.908 INFO  ProgressMeter -           4:57193873              5.5              18652000        3388161.8
-23:16:19.911 INFO  ProgressMeter -           4:98965731              5.7              19265000        3396648.9
-23:16:29.911 INFO  ProgressMeter -          4:140641494              5.8              19830000        3396459.1
-23:16:39.913 INFO  ProgressMeter -          4:187510022              6.0              20428000        3401756.3
-23:16:49.928 INFO  ProgressMeter -           5:34190717              6.2              21025000        3406494.9
-23:16:59.941 INFO  ProgressMeter -           5:68927321              6.3              21619000        3410519.7
-23:17:09.943 INFO  ProgressMeter -           5:87770427              6.5              22197000        3411974.8
-23:17:19.942 INFO  ProgressMeter -          5:132232576              6.7              22797000        3416671.5
-23:17:29.974 INFO  ProgressMeter -          5:140567367              6.8              23165000        3386960.0
-23:17:39.985 INFO  ProgressMeter -          5:150561350              7.0              23561000        3362814.6
-23:17:49.992 INFO  ProgressMeter -          5:178368245              7.2              24163000        3368549.7
-23:18:00.000 INFO  ProgressMeter -           6:26846525              7.3              24781000        3376196.4
-23:18:10.001 INFO  ProgressMeter -           6:33384709              7.5              25342000        3375962.5
-23:18:20.019 INFO  ProgressMeter -           6:46977306              7.7              25919000        3377721.2
-23:18:30.025 INFO  ProgressMeter -           6:90426246              7.8              26519000        3382381.7
-23:18:40.040 INFO  ProgressMeter -          6:128348759              8.0              27030000        3375690.8
-23:18:50.052 INFO  ProgressMeter -          6:160493005              8.2              27634000        3380671.1
-23:19:00.055 INFO  ProgressMeter -           7:14029486              8.3              28233000        3384913.6
-23:19:10.055 INFO  ProgressMeter -           7:44555448              8.5              28830000        3388774.6
-23:19:20.070 INFO  ProgressMeter -           7:63217600              8.7              29429000        3392626.6
-23:19:30.075 INFO  ProgressMeter -           7:75053341              8.8              30007000        3394009.1
-23:19:40.092 INFO  ProgressMeter -           7:99627903              9.0              30566000        3393168.4
-23:19:50.093 INFO  ProgressMeter -          7:102322627              9.2              31069000        3386340.8
-23:20:00.099 INFO  ProgressMeter -          7:132437695              9.3              31648000        3387868.6
-23:20:10.105 INFO  ProgressMeter -          7:151261235              9.5              32258000        3392603.0
-23:20:20.117 INFO  ProgressMeter -            8:7879262              9.7              32883000        3398689.4
-23:20:30.128 INFO  ProgressMeter -           8:29436365              9.8              33498000        3403559.2
-23:20:40.143 INFO  ProgressMeter -           8:70042044             10.0              34099000        3406850.9
-23:20:50.153 INFO  ProgressMeter -           8:86735471             10.2              34694000        3409467.2
-23:21:00.157 INFO  ProgressMeter -           8:86802141             10.3              35301000        3413187.0
-23:21:10.158 INFO  ProgressMeter -           8:95804204             10.5              35891000        3415198.1
-23:21:20.165 INFO  ProgressMeter -          8:139845119             10.7              36465000        3415605.1
-23:21:30.178 INFO  ProgressMeter -           9:14909990             10.8              37079000        3419662.4
-23:21:40.187 INFO  ProgressMeter -           9:39085573             11.0              37619000        3416901.2
-23:21:50.189 INFO  ProgressMeter -           9:69200133             11.2              38103000        3409242.4
-23:22:00.192 INFO  ProgressMeter -           9:95018986             11.3              38698000        3411589.4
-23:22:10.198 INFO  ProgressMeter -          9:116259560             11.5              39279000        3412632.3
-23:22:20.205 INFO  ProgressMeter -          9:131648352             11.7              39798000        3408335.7
-23:22:30.220 INFO  ProgressMeter -          9:141070557             11.8              40420000        3412818.5
-23:22:40.232 INFO  ProgressMeter -          10:29815881             12.0              40945000        3409114.6
-23:22:50.246 INFO  ProgressMeter -          10:55004862             12.2              41541000        3411338.0
-23:23:00.254 INFO  ProgressMeter -          10:84118628             12.3              42157000        3415140.0
-23:23:10.256 INFO  ProgressMeter -         10:103361021             12.5              42744000        3416554.4
-23:23:20.270 INFO  ProgressMeter -         10:128291507             12.7              43345000        3418982.1
-23:23:30.285 INFO  ProgressMeter -           11:4903333             12.8              43935000        3420485.8
-23:23:40.293 INFO  ProgressMeter -          11:32410553             13.0              44538000        3422980.8
-23:23:50.304 INFO  ProgressMeter -          11:60150733             13.2              45111000        3423123.1
-23:24:00.314 INFO  ProgressMeter -          11:66100787             13.3              45717000        3425738.9
-23:24:10.327 INFO  ProgressMeter -          11:77387972             13.5              46285000        3425469.4
-23:24:20.338 INFO  ProgressMeter -         11:111933231             13.7              46875000        3426814.8
-23:24:30.344 INFO  ProgressMeter -         11:130274919             13.8              47467000        3428301.1
-23:24:40.348 INFO  ProgressMeter -           12:9845504             14.0              48051000        3429181.1
-23:24:50.351 INFO  ProgressMeter -          12:45270259             14.2              48637000        3430189.5
-23:25:00.366 INFO  ProgressMeter -          12:54626499             14.3              49208000        3430085.0
-23:25:10.376 INFO  ProgressMeter -          12:75603059             14.5              49823000        3433026.6
-23:25:20.376 INFO  ProgressMeter -         12:110207304             14.7              50439000        3436012.3
-23:25:30.385 INFO  ProgressMeter -         12:125797587             14.8              51045000        3438222.7
-23:25:40.395 INFO  ProgressMeter -          13:36944208             15.0              51644000        3439917.7
-23:25:50.406 INFO  ProgressMeter -          13:91025842             15.2              52254000        3442288.7
-23:26:00.410 INFO  ProgressMeter -          14:23299350             15.3              52858000        3444250.9
-23:26:10.413 INFO  ProgressMeter -          14:52742837             15.5              53437000        3444559.4
-23:26:20.425 INFO  ProgressMeter -          14:73425891             15.7              53930000        3439340.2
-23:26:30.426 INFO  ProgressMeter -          14:99641772             15.8              54526000        3440777.4
-23:26:40.438 INFO  ProgressMeter -          15:28360682             16.0              55112000        3441517.4
-23:26:50.444 INFO  ProgressMeter -          15:41688803             16.2              55663000        3440096.7
-23:27:00.456 INFO  ProgressMeter -          15:57554352             16.3              56259000        3441443.6
-23:27:10.460 INFO  ProgressMeter -          15:75120314             16.5              56843000        3442057.6
-23:27:20.475 INFO  ProgressMeter -          15:85406775             16.7              57436000        3443167.9
-23:27:30.485 INFO  ProgressMeter -            16:845587             16.8              58054000        3445750.2
-23:27:40.492 INFO  ProgressMeter -          16:11870640             17.0              58664000        3447828.7
-23:27:50.498 INFO  ProgressMeter -          16:21847347             17.2              59235000        3447596.8
-23:28:00.503 INFO  ProgressMeter -          16:30581156             17.3              59837000        3449156.4
-23:28:10.518 INFO  ProgressMeter -          16:57290638             17.5              60422000        3449689.4
-23:28:20.529 INFO  ProgressMeter -          16:72313855             17.7              61020000        3450954.1
-23:28:30.550 INFO  ProgressMeter -            17:729187             17.8              61627000        3452673.5
-23:28:40.550 INFO  ProgressMeter -           17:7495519             18.0              62149000        3449703.7
-23:28:50.565 INFO  ProgressMeter -          17:18387258             18.2              62706000        3448672.2
-23:29:00.565 INFO  ProgressMeter -          17:31203818             18.3              63280000        3448626.7
-23:29:10.571 INFO  ProgressMeter -          17:39521470             18.5              63841000        3447867.4
-23:29:20.584 INFO  ProgressMeter -          17:45096581             18.7              64394000        3446665.8
-23:29:30.596 INFO  ProgressMeter -          17:61499196             18.8              64990000        3447772.8
-23:29:40.603 INFO  ProgressMeter -          17:74470472             19.0              65592000        3449194.0
-23:29:50.603 INFO  ProgressMeter -           18:9678508             19.2              66190000        3450400.0
-23:30:00.603 INFO  ProgressMeter -          18:44662761             19.3              66771000        3450706.6
-23:30:10.610 INFO  ProgressMeter -            19:734096             19.5              67317000        3449191.1
-23:30:20.622 INFO  ProgressMeter -           19:6501547             19.7              67865000        3447794.1
-23:30:30.632 INFO  ProgressMeter -          19:12786868             19.9              68422000        3446876.9
-23:30:40.641 INFO  ProgressMeter -          19:19309935             20.0              68982000        3446124.8
-23:30:50.650 INFO  ProgressMeter -          19:38904232             20.2              69588000        3447667.1
-23:31:00.665 INFO  ProgressMeter -          19:46184809             20.4              70208000        3449855.0
-23:31:10.666 INFO  ProgressMeter -          19:52408130             20.5              70807000        3451025.9
-23:31:20.670 INFO  ProgressMeter -           20:1287107             20.7              71405000        3452118.5
-23:31:30.669 INFO  ProgressMeter -          20:30903975             20.9              72010000        3453540.3
-23:31:40.672 INFO  ProgressMeter -          20:44980808             21.0              72582000        3453364.1
-23:31:50.679 INFO  ProgressMeter -          21:10164473             21.2              73184000        3454593.1
-23:32:00.685 INFO  ProgressMeter -          21:44841808             21.4              73769000        3455009.4
-23:32:10.692 INFO  ProgressMeter -          22:20615990             21.5              74349000        3455181.6
-23:32:20.695 INFO  ProgressMeter -          22:27059308             21.7              74929000        3455367.0
-23:32:30.709 INFO  ProgressMeter -          22:40677018             21.9              75512000        3455652.6
-23:32:40.721 INFO  ProgressMeter -             X:377103             22.0              76056000        3454170.6
-23:32:50.734 INFO  ProgressMeter -           X:25031002             22.2              76566000        3451178.2
-23:33:00.736 INFO  ProgressMeter -           X:49858111             22.4              77146000        3451385.4
-23:33:10.746 INFO  ProgressMeter -           X:77378713             22.5              77725000        3451527.3
-23:33:20.757 INFO  ProgressMeter -          X:115574787             22.7              78290000        3451049.9
-23:33:30.757 INFO  ProgressMeter -          X:149919236             22.9              78875000        3451477.3
-23:33:40.777 INFO  ProgressMeter -    GL000211.1:126224             23.0              79470000        3452285.5
-23:33:50.792 INFO  ProgressMeter -      hs37d5:22482870             23.2              80036000        3451846.1
-23:33:54.581 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
+22:34:12.091 INFO  ApplyBQSR - ------------------------------------------------------------
+22:34:12.092 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.1.8.1
+22:34:12.092 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
+22:34:12.092 INFO  ApplyBQSR - Executing as lkemp@Wintermute on Linux v4.4.0-179-generic amd64
+22:34:12.092 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_265-b11
+22:34:12.092 INFO  ApplyBQSR - Start Date/Time: 11 September 2020 10:34:11 PM
+22:34:12.092 INFO  ApplyBQSR - ------------------------------------------------------------
+22:34:12.092 INFO  ApplyBQSR - ------------------------------------------------------------
+22:34:12.093 INFO  ApplyBQSR - HTSJDK Version: 2.23.0
+22:34:12.093 INFO  ApplyBQSR - Picard Version: 2.22.8
+22:34:12.093 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+22:34:12.093 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+22:34:12.093 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+22:34:12.093 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+22:34:12.093 INFO  ApplyBQSR - Deflater: IntelDeflater
+22:34:12.093 INFO  ApplyBQSR - Inflater: IntelInflater
+22:34:12.094 INFO  ApplyBQSR - GCS max retries/reopens: 20
+22:34:12.094 INFO  ApplyBQSR - Requester pays: disabled
+22:34:12.094 INFO  ApplyBQSR - Initializing engine
+22:34:12.733 INFO  ApplyBQSR - Done initializing engine
+22:34:14.670 WARN  ApplyBQSR - This tool has only been well tested on ILLUMINA-based sequencing data. For other data use at your own risk.
+22:34:14.670 INFO  ProgressMeter - Starting traversal
+22:34:14.670 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+22:34:24.700 INFO  ProgressMeter -            1:1573842              0.2                277000        1657359.4
+22:34:34.704 INFO  ProgressMeter -           1:12248782              0.3                754000        2258386.6
+22:34:44.706 INFO  ProgressMeter -           1:20654427              0.5               1348000        2692948.0
+22:34:54.712 INFO  ProgressMeter -           1:32950999              0.7               1943000        2911588.4
+22:35:04.726 INFO  ProgressMeter -           1:46527703              0.8               2535000        3038657.5
+22:35:14.741 INFO  ProgressMeter -           1:78240367              1.0               3125000        3121410.4
+22:35:24.751 INFO  ProgressMeter -          1:110210918              1.2               3720000        3184931.5
+22:35:34.765 INFO  ProgressMeter -          1:145311859              1.3               4319000        3235448.3
+22:35:44.773 INFO  ProgressMeter -          1:150916361              1.5               4919000        3275657.3
+22:35:54.775 INFO  ProgressMeter -          1:156517809              1.7               5492000        3291809.4
+22:36:04.780 INFO  ProgressMeter -          1:175162114              1.8               6091000        3319074.7
+22:36:14.787 INFO  ProgressMeter -          1:202158364              2.0               6640000        3316821.4
+22:36:24.794 INFO  ProgressMeter -          1:220427582              2.2               7199000        3319474.7
+22:36:34.803 INFO  ProgressMeter -          1:241875065              2.3               7814000        3345726.5
+22:36:44.812 INFO  ProgressMeter -           2:24523781              2.5               8400000        3356866.9
+22:36:54.863 INFO  ProgressMeter -           2:46219629              2.7               8949000        3351852.8
+22:37:04.865 INFO  ProgressMeter -           2:74785558              2.8               9544000        3364650.7
+22:37:14.867 INFO  ProgressMeter -           2:99012322              3.0              10120000        3369682.8
+22:37:24.883 INFO  ProgressMeter -          2:121974235              3.2              10720000        3381507.9
+22:37:34.889 INFO  ProgressMeter -          2:152443789              3.3              11272000        3377934.9
+22:37:44.900 INFO  ProgressMeter -          2:179443681              3.5              11829000        3376048.9
+22:37:54.904 INFO  ProgressMeter -          2:210594600              3.7              12437000        3388320.6
+22:38:04.911 INFO  ProgressMeter -          2:233348807              3.8              13008000        3389854.1
+22:38:14.927 INFO  ProgressMeter -           3:12861469              4.0              13583000        3392131.7
+22:38:24.927 INFO  ProgressMeter -           3:44504613              4.2              14199000        3404274.0
+22:38:34.940 INFO  ProgressMeter -           3:52422681              4.3              14805000        3413007.3
+22:38:44.951 INFO  ProgressMeter -          3:100988136              4.5              15416000        3422241.5
+22:38:54.960 INFO  ProgressMeter -          3:128890546              4.7              16031000        3431672.3
+22:39:04.971 INFO  ProgressMeter -          3:160117445              4.8              16630000        3437134.0
+22:39:14.980 INFO  ProgressMeter -          3:195281408              5.0              17219000        3440256.5
+22:39:24.993 INFO  ProgressMeter -            4:9231824              5.2              17837000        3448740.3
+22:39:35.003 INFO  ProgressMeter -           4:40400519              5.3              18431000        3452241.6
+22:39:45.010 INFO  ProgressMeter -           4:79465260              5.5              19005000        3451918.9
+22:39:55.016 INFO  ProgressMeter -          4:119907705              5.7              19592000        3453907.1
+22:40:05.024 INFO  ProgressMeter -          4:166198924              5.8              20170000        3454230.4
+22:40:15.035 INFO  ProgressMeter -           5:14363839              6.0              20724000        3450520.7
+22:40:25.040 INFO  ProgressMeter -           5:45645496              6.2              21322000        3454176.8
+22:40:35.045 INFO  ProgressMeter -           5:70862635              6.3              21898000        3454179.3
+22:40:45.056 INFO  ProgressMeter -          5:110564964              6.5              22470000        3453522.7
+22:40:55.094 INFO  ProgressMeter -          5:138651335              6.7              22972000        3442185.7
+22:41:05.110 INFO  ProgressMeter -          5:141368097              6.8              23316000        3408448.0
+22:41:15.119 INFO  ProgressMeter -          5:169407641              7.0              23838000        3401800.0
+22:41:25.133 INFO  ProgressMeter -            6:7341714              7.2              24443000        3406990.6
+22:41:35.139 INFO  ProgressMeter -           6:31592008              7.3              25070000        3415004.0
+22:41:45.139 INFO  ProgressMeter -           6:41749132              7.5              25672000        3419377.2
+22:41:55.152 INFO  ProgressMeter -           6:74530171              7.7              26281000        3424405.6
+22:42:05.154 INFO  ProgressMeter -          6:116951619              7.8              26892000        3429496.9
+22:42:15.162 INFO  ProgressMeter -          6:155486413              8.0              27527000        3437358.9
+22:42:25.175 INFO  ProgressMeter -            7:4945749              8.2              28030000        3428725.2
+22:42:35.181 INFO  ProgressMeter -           7:38299418              8.3              28657000        3435336.0
+22:42:45.182 INFO  ProgressMeter -           7:56440557              8.5              29243000        3436909.3
+22:42:55.190 INFO  ProgressMeter -           7:74251383              8.7              29849000        3440687.9
+22:43:05.194 INFO  ProgressMeter -           7:96639941              8.8              30451000        3443884.6
+22:43:15.195 INFO  ProgressMeter -          7:102300593              9.0              31053000        3446994.9
+22:43:25.200 INFO  ProgressMeter -          7:131099324              9.2              31618000        3445928.3
+22:43:35.209 INFO  ProgressMeter -          7:151459609              9.3              32260000        3453111.1
+22:43:45.223 INFO  ProgressMeter -            8:7884547              9.5              32891000        3458867.0
+22:43:55.235 INFO  ProgressMeter -           8:28888139              9.7              33482000        3460290.3
+22:44:05.242 INFO  ProgressMeter -           8:68864572              9.8              34086000        3463027.2
+22:44:15.252 INFO  ProgressMeter -           8:86735365             10.0              34690000        3465649.9
+22:44:25.263 INFO  ProgressMeter -           8:86802028             10.2              35299000        3468666.5
+22:44:35.277 INFO  ProgressMeter -           8:97506441             10.3              35921000        3472831.4
+22:44:45.285 INFO  ProgressMeter -          8:142154230             10.5              36495000        3472330.1
+22:44:55.299 INFO  ProgressMeter -            9:4833021             10.7              36958000        3461421.4
+22:45:05.305 INFO  ProgressMeter -           9:37476991             10.8              37571000        3464712.9
+22:45:15.318 INFO  ProgressMeter -           9:69422710             11.0              38148000        3464608.9
+22:45:25.322 INFO  ProgressMeter -           9:96009939             11.2              38745000        3466338.6
+22:45:35.334 INFO  ProgressMeter -          9:117188464             11.3              39334000        3467266.5
+22:45:45.353 INFO  ProgressMeter -          9:133948104             11.5              39905000        3466578.6
+22:45:55.367 INFO  ProgressMeter -           10:5681458             11.7              40528000        3470378.0
+22:46:05.376 INFO  ProgressMeter -          10:37465233             11.8              41064000        3466759.7
+22:46:15.389 INFO  ProgressMeter -          10:63212989             12.0              41621000        3464961.3
+22:46:25.397 INFO  ProgressMeter -          10:88092908             12.2              42198000        3464882.9
+22:46:35.411 INFO  ProgressMeter -         10:104228853             12.3              42803000        3467046.5
+22:46:45.421 INFO  ProgressMeter -         10:132812549             12.5              43401000        3468611.4
+22:46:55.424 INFO  ProgressMeter -           11:6651318             12.7              44029000        3472533.1
+22:47:05.432 INFO  ProgressMeter -          11:38671299             12.8              44668000        3477191.3
+22:47:15.440 INFO  ProgressMeter -          11:62359055             13.0              45292000        3480568.5
+22:47:25.441 INFO  ProgressMeter -          11:67353976             13.2              45857000        3479423.2
+22:47:35.442 INFO  ProgressMeter -          11:89660635             13.3              46484000        3482943.3
+22:47:45.443 INFO  ProgressMeter -         11:118253418             13.5              47058000        3482458.7
+22:47:55.453 INFO  ProgressMeter -           12:3042603             13.7              47673000        3484944.8
+22:48:05.456 INFO  ProgressMeter -          12:22078172             13.8              48311000        3489061.6
+22:48:15.460 INFO  ProgressMeter -          12:50831523             14.0              48928000        3491577.6
+22:48:25.463 INFO  ProgressMeter -          12:57910310             14.2              49510000        3491570.2
+22:48:35.472 INFO  ProgressMeter -          12:96617357             14.3              50104000        3492375.1
+22:48:45.484 INFO  ProgressMeter -         12:118464683             14.5              50698000        3493153.5
+22:48:55.498 INFO  ProgressMeter -          13:21181665             14.7              51307000        3494924.1
+22:49:05.509 INFO  ProgressMeter -          13:49781630             14.8              51886000        3494642.1
+22:49:15.511 INFO  ProgressMeter -         13:103719013             15.0              52450000        3493406.2
+22:49:25.521 INFO  ProgressMeter -          14:24794527             15.2              53043000        3494077.0
+22:49:35.535 INFO  ProgressMeter -          14:60864533             15.3              53616000        3493418.7
+22:49:45.544 INFO  ProgressMeter -          14:83692284             15.5              54210000        3494139.4
+22:49:55.562 INFO  ProgressMeter -         14:106390458             15.7              54813000        3495388.9
+22:50:05.568 INFO  ProgressMeter -          15:34072496             15.8              55414000        3496533.8
+22:50:15.573 INFO  ProgressMeter -          15:45459521             16.0              55985000        3495777.9
+22:50:25.588 INFO  ProgressMeter -          15:69004039             16.2              56591000        3497168.1
+22:50:35.599 INFO  ProgressMeter -          15:82633931             16.3              57185000        3497810.2
+22:50:45.610 INFO  ProgressMeter -          15:98958946             16.5              57756000        3497046.7
+22:50:55.615 INFO  ProgressMeter -           16:2791074             16.7              58337000        3496922.4
+22:51:05.627 INFO  ProgressMeter -          16:17190247             16.8              58941000        3498134.4
+22:51:15.643 INFO  ProgressMeter -          16:28601650             17.0              59537000        3498845.7
+22:51:25.650 INFO  ProgressMeter -          16:33948565             17.2              60108000        3498112.0
+22:51:35.666 INFO  ProgressMeter -          16:66942025             17.3              60589000        3492178.2
+22:51:45.668 INFO  ProgressMeter -          16:81116434             17.5              61186000        3493026.1
+22:51:55.678 INFO  ProgressMeter -           17:3182168             17.7              61772000        3493209.8
+22:52:05.687 INFO  ProgressMeter -          17:10304124             17.9              62351000        3493001.0
+22:52:15.698 INFO  ProgressMeter -          17:21319330             18.0              62937000        3493178.2
+22:52:25.710 INFO  ProgressMeter -          17:35921640             18.2              63501000        3492139.1
+22:52:35.710 INFO  ProgressMeter -          17:41143147             18.4              64043000        3489958.1
+22:52:45.723 INFO  ProgressMeter -          17:48355862             18.5              64599000        3488531.6
+22:52:55.738 INFO  ProgressMeter -          17:66124973             18.7              65210000        3490067.9
+22:53:05.746 INFO  ProgressMeter -          17:78360142             18.9              65793000        3490113.4
+22:53:15.760 INFO  ProgressMeter -          18:14887001             19.0              66354000        3488982.9
+22:53:25.768 INFO  ProgressMeter -          18:56203423             19.2              66958000        3490134.6
+22:53:35.769 INFO  ProgressMeter -           19:2852958             19.4              67555000        3490919.8
+22:53:45.771 INFO  ProgressMeter -           19:9066950             19.5              68102000        3489129.9
+22:53:55.797 INFO  ProgressMeter -          19:13035784             19.7              68470000        3478206.4
+22:54:05.797 INFO  ProgressMeter -          19:17439058             19.9              68797000        3465477.2
+22:54:15.800 INFO  ProgressMeter -          19:36157732             20.0              69387000        3466091.9
+22:54:25.799 INFO  ProgressMeter -          19:42824551             20.2              69979000        3466801.2
+22:54:35.801 INFO  ProgressMeter -          19:50091666             20.4              70574000        3467640.6
+22:54:45.803 INFO  ProgressMeter -          19:56888837             20.5              71188000        3469395.2
+22:54:55.806 INFO  ProgressMeter -          20:17922301             20.7              71747000        3468457.1
+22:55:05.808 INFO  ProgressMeter -          20:37177355             20.9              72329000        3468639.7
+22:55:15.833 INFO  ProgressMeter -          20:60713325             21.0              72920000        3469184.3
+22:55:25.837 INFO  ProgressMeter -          21:34883593             21.2              73496000        3469069.7
+22:55:35.840 INFO  ProgressMeter -          21:47841936             21.4              74008000        3465962.3
+22:55:45.850 INFO  ProgressMeter -          22:22985787             21.5              74637000        3468321.2
+22:55:55.864 INFO  ProgressMeter -          22:36712508             21.7              75260000        3470353.7
+22:56:05.872 INFO  ProgressMeter -          22:46684452             21.9              75825000        3469719.7
+22:56:15.874 INFO  ProgressMeter -           X:17092218             22.0              76393000        3469247.3
+22:56:25.882 INFO  ProgressMeter -           X:48792041             22.2              76998000        3470434.1
+22:56:35.891 INFO  ProgressMeter -           X:71802275             22.4              77591000        3471066.2
+22:56:45.899 INFO  ProgressMeter -          X:107821304             22.5              78161000        3470665.2
+22:56:55.907 INFO  ProgressMeter -          X:141255110             22.7              78771000        3472035.7
+22:57:05.921 INFO  ProgressMeter -      GL000221.1:4381             22.9              79359000        3472410.9
+22:57:15.927 INFO  ProgressMeter -      hs37d5:17576804             23.0              79942000        3472578.6
+22:57:21.815 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
 
-23:33:54.581 INFO  ProgressMeter -             unmapped             23.2              80252081        3451761.8
-23:33:54.581 INFO  ProgressMeter - Traversal complete. Processed 80252081 total reads in 23.2 minutes.
-23:33:55.030 INFO  ApplyBQSR - Shutting down engine
-[11 September 2020 11:33:55 PM] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 23.30 minutes.
-Runtime.totalMemory()=1684013056
-Using GATK jar /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9b3bdd1f/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar
+22:57:21.815 INFO  ProgressMeter -             unmapped             23.1              80252081        3471250.9
+22:57:21.815 INFO  ProgressMeter - Traversal complete. Processed 80252081 total reads in 23.1 minutes.
+22:57:21.865 INFO  ApplyBQSR - Shutting down engine
+[11 September 2020 10:57:21 PM] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 23.17 minutes.
+Runtime.totalMemory()=2330984448
+Using GATK jar /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/bb402f1e/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar
 Running:
-    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx30g -jar /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9b3bdd1f/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar ApplyBQSR -R /store/lkemp/publicData/b37/human_g1k_v37_decoy.fasta -I ../results/mapped/NIST7035_NIST_sorted_mkdups.bam --bqsr-recal-file ../results/mapped/NIST7035_NIST_recalibration_report.grp -O ../results/mapped/NIST7035_NIST_recalibrated.bam
-23:34:05.850 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9b3bdd1f/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
-Sep 11, 2020 11:34:06 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx30g -jar /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/bb402f1e/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar ApplyBQSR -R /store/lkemp/publicData/b37/human_g1k_v37_decoy.fasta -I ../results/mapped/NIST7035_NIST_sorted_mkdups.bam --bqsr-recal-file ../results/mapped/NIST7035_NIST_recalibration_report.grp -O ../results/mapped/NIST7035_NIST_recalibrated.bam
+22:57:32.618 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/bb402f1e/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Sep 11, 2020 10:57:32 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
 INFO: Failed to detect whether we are running on Google Compute Engine.
-23:34:06.180 INFO  ApplyBQSR - ------------------------------------------------------------
-23:34:06.180 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.1.8.1
-23:34:06.180 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
-23:34:06.180 INFO  ApplyBQSR - Executing as lkemp@Wintermute on Linux v4.4.0-179-generic amd64
-23:34:06.180 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_265-b11
-23:34:06.181 INFO  ApplyBQSR - Start Date/Time: 11 September 2020 11:34:05 PM
-23:34:06.181 INFO  ApplyBQSR - ------------------------------------------------------------
-23:34:06.181 INFO  ApplyBQSR - ------------------------------------------------------------
-23:34:06.181 INFO  ApplyBQSR - HTSJDK Version: 2.23.0
-23:34:06.181 INFO  ApplyBQSR - Picard Version: 2.22.8
-23:34:06.181 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
-23:34:06.181 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
-23:34:06.181 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
-23:34:06.181 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
-23:34:06.182 INFO  ApplyBQSR - Deflater: IntelDeflater
-23:34:06.182 INFO  ApplyBQSR - Inflater: IntelInflater
-23:34:06.182 INFO  ApplyBQSR - GCS max retries/reopens: 20
-23:34:06.182 INFO  ApplyBQSR - Requester pays: disabled
-23:34:06.182 INFO  ApplyBQSR - Initializing engine
-23:34:06.642 INFO  ApplyBQSR - Done initializing engine
-23:34:08.240 WARN  ApplyBQSR - This tool has only been well tested on ILLUMINA-based sequencing data. For other data use at your own risk.
-23:34:08.240 INFO  ProgressMeter - Starting traversal
-23:34:08.241 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
-23:34:18.267 INFO  ProgressMeter -            1:5066568              0.2                450000        2693535.5
-23:34:28.279 INFO  ProgressMeter -           1:16865844              0.3               1006000        3012427.0
-23:34:38.278 INFO  ProgressMeter -           1:25226366              0.5               1572000        3140127.2
-23:34:48.319 INFO  ProgressMeter -           1:35816921              0.7               2035000        3046635.2
-23:34:58.334 INFO  ProgressMeter -           1:46045670              0.8               2509000        3005270.3
-23:35:08.343 INFO  ProgressMeter -           1:75704349              1.0               3085000        3079764.4
-23:35:18.345 INFO  ProgressMeter -          1:108926066              1.2               3623000        3100821.6
-23:35:28.353 INFO  ProgressMeter -          1:144180445              1.3               4183000        3132864.0
-23:35:38.389 INFO  ProgressMeter -          1:148644857              1.5               4733000        3150188.0
-23:35:48.417 INFO  ProgressMeter -          1:154947206              1.7               5300000        3174444.7
-23:35:58.426 INFO  ProgressMeter -          1:166590027              1.8               5871000        3196986.9
-23:36:08.430 INFO  ProgressMeter -          1:196797171              2.0               6451000        3220454.6
-23:36:18.445 INFO  ProgressMeter -          1:209974510              2.2               7007000        3228933.1
-23:36:28.456 INFO  ProgressMeter -          1:229577430              2.3               7571000        3239762.1
-23:36:38.467 INFO  ProgressMeter -            2:7092991              2.5               8136000        3249504.1
-23:36:48.467 INFO  ProgressMeter -           2:32426861              2.7               8714000        3263140.8
-23:36:58.476 INFO  ProgressMeter -           2:67816576              2.8               9268000        3266543.3
-23:37:08.509 INFO  ProgressMeter -           2:86354508              3.0               9694000        3226690.5
-23:37:18.510 INFO  ProgressMeter -           2:96551860              3.2               9941000        3134841.4
-23:37:28.511 INFO  ProgressMeter -          2:103149323              3.3              10228000        3064278.5
-23:37:38.512 INFO  ProgressMeter -          2:128605679              3.5              10819000        3087173.6
-23:37:48.516 INFO  ProgressMeter -          2:160619379              3.7              11409000        3107675.0
-23:37:58.523 INFO  ProgressMeter -          2:188332549              3.8              11981000        3121664.4
-23:38:08.529 INFO  ProgressMeter -          2:217538193              4.0              12551000        3134002.3
-23:38:18.528 INFO  ProgressMeter -          2:238005223              4.2              13117000        3144470.1
-23:38:28.537 INFO  ProgressMeter -           3:17202074              4.3              13730000        3164870.6
-23:38:38.537 INFO  ProgressMeter -           3:46399456              4.5              14290000        3172078.0
-23:38:48.539 INFO  ProgressMeter -           3:52556188              4.7              14843000        3177272.7
-23:38:58.543 INFO  ProgressMeter -          3:102171792              4.8              15449000        3193030.7
-23:39:08.549 INFO  ProgressMeter -          3:129294314              5.0              16063000        3209315.8
-23:39:18.551 INFO  ProgressMeter -          3:167247007              5.2              16687000        3226515.4
-23:39:28.557 INFO  ProgressMeter -          3:195513167              5.3              17263000        3233629.4
-23:39:38.561 INFO  ProgressMeter -            4:8477603              5.5              17781000        3229777.2
-23:39:48.562 INFO  ProgressMeter -           4:37286244              5.7              18342000        3233780.0
-23:39:58.575 INFO  ProgressMeter -           4:77020038              5.8              18938000        3243428.4
-23:40:08.584 INFO  ProgressMeter -          4:119475728              6.0              19566000        3257895.9
-23:40:18.592 INFO  ProgressMeter -          4:166960540              6.2              20184000        3269979.0
-23:40:28.608 INFO  ProgressMeter -           5:21482037              6.3              20801000        3281208.1
-23:40:38.616 INFO  ProgressMeter -           5:55800680              6.5              21420000        3292227.5
-23:40:48.625 INFO  ProgressMeter -           5:77298465              6.7              22045000        3303586.8
-23:40:58.632 INFO  ProgressMeter -          5:125809007              6.8              22651000        3311630.4
-23:41:08.632 INFO  ProgressMeter -          5:140763070              7.0              23246000        3317768.5
-23:41:18.648 INFO  ProgressMeter -          5:169568391              7.2              23844000        3323923.6
-23:41:28.660 INFO  ProgressMeter -            6:7518055              7.3              24450000        3330919.0
-23:41:38.673 INFO  ProgressMeter -           6:31607309              7.5              25079000        3340667.1
-23:41:48.691 INFO  ProgressMeter -           6:41738329              7.7              25670000        3345017.7
-23:41:58.692 INFO  ProgressMeter -           6:74310024              7.8              26274000        3350919.3
-23:42:08.699 INFO  ProgressMeter -          6:117199043              8.0              26899000        3359169.8
-23:42:18.705 INFO  ProgressMeter -          6:152651162              8.2              27477000        3361347.6
-23:42:28.710 INFO  ProgressMeter -            7:5535391              8.3              28067000        3364890.5
-23:42:38.718 INFO  ProgressMeter -           7:36194071              8.5              28621000        3364036.7
-23:42:48.723 INFO  ProgressMeter -           7:56439401              8.7              29194000        3365419.0
-23:42:58.726 INFO  ProgressMeter -           7:73474561              8.8              29791000        3369482.6
-23:43:08.729 INFO  ProgressMeter -           7:93055638              9.0              30390000        3373617.9
-23:43:18.746 INFO  ProgressMeter -          7:102202567              9.2              30997000        3378395.1
-23:43:28.749 INFO  ProgressMeter -          7:131179734              9.3              31623000        3385107.8
-23:43:38.761 INFO  ProgressMeter -          7:151296837              9.5              32259000        3392589.2
-23:43:48.772 INFO  ProgressMeter -            8:7842866              9.7              32858000        3395994.4
-23:43:58.775 INFO  ProgressMeter -           8:28196859              9.8              33462000        3399843.9
-23:44:08.775 INFO  ProgressMeter -           8:67789583             10.0              34062000        3403176.8
-23:44:18.775 INFO  ProgressMeter -           8:86574178             10.2              34550000        3395393.9
-23:44:28.775 INFO  ProgressMeter -           8:86758166             10.3              34943000        3378676.1
-23:44:38.782 INFO  ProgressMeter -           8:86807296             10.5              35417000        3370158.9
-23:44:48.791 INFO  ProgressMeter -          8:100789077             10.7              35971000        3369385.7
-23:44:58.799 INFO  ProgressMeter -          8:142487877             10.8              36513000        3367539.9
-23:45:08.809 INFO  ProgressMeter -           9:15038002             11.0              37081000        3368101.4
-23:45:18.821 INFO  ProgressMeter -           9:37917357             11.2              37601000        3364341.3
-23:45:28.834 INFO  ProgressMeter -           9:69848116             11.3              38176000        3365535.6
-23:45:38.840 INFO  ProgressMeter -           9:95305486             11.5              38713000        3363432.9
-23:45:48.846 INFO  ProgressMeter -          9:116353602             11.7              39284000        3364297.1
-23:45:58.854 INFO  ProgressMeter -          9:132637006             11.8              39857000        3365296.4
-23:46:08.864 INFO  ProgressMeter -             10:94762             12.0              40434000        3366587.0
-23:46:18.882 INFO  ProgressMeter -          10:25510031             12.2              40848000        3354429.0
-23:46:28.892 INFO  ProgressMeter -          10:51464784             12.3              41444000        3357375.3
-23:46:38.905 INFO  ProgressMeter -          10:79540984             12.5              42027000        3359186.0
-23:46:48.913 INFO  ProgressMeter -          10:98791312             12.7              42554000        3356562.8
-23:46:58.926 INFO  ProgressMeter -         10:120354280             12.8              43148000        3359193.4
-23:47:08.936 INFO  ProgressMeter -           11:1265825             13.0              43705000        3358930.2
-23:47:18.939 INFO  ProgressMeter -          11:14300043             13.2              44246000        3357489.2
-23:47:28.944 INFO  ProgressMeter -          11:47305718             13.3              44837000        3359826.8
-23:47:38.947 INFO  ProgressMeter -          11:63307403             13.5              45371000        3357888.1
-23:47:48.953 INFO  ProgressMeter -          11:67815177             13.7              45896000        3355334.6
-23:47:58.960 INFO  ProgressMeter -          11:89608955             13.8              46474000        3356658.5
-23:48:08.960 INFO  ProgressMeter -         11:118528968             14.0              47091000        3360766.2
-23:48:18.962 INFO  ProgressMeter -           12:2804740             14.2              47658000        3361243.0
-23:48:28.979 INFO  ProgressMeter -          12:15811448             14.3              48214000        3360887.2
-23:48:38.985 INFO  ProgressMeter -          12:49171889             14.5              48767000        3360367.7
-23:48:48.988 INFO  ProgressMeter -          12:56390976             14.7              49311000        3359262.1
-23:48:59.001 INFO  ProgressMeter -          12:74921062             14.8              49816000        3355520.4
-23:49:09.009 INFO  ProgressMeter -         12:109654653             15.0              50401000        3357205.6
-23:49:19.020 INFO  ProgressMeter -         12:124808915             15.2              51008000        3360292.0
-23:49:29.027 INFO  ProgressMeter -          13:33109880             15.3              51593000        3361888.6
-23:49:39.036 INFO  ProgressMeter -          13:79483903             15.5              52201000        3364930.0
-23:49:49.040 INFO  ProgressMeter -          14:20923729             15.7              52771000        3365504.6
-23:49:59.047 INFO  ProgressMeter -          14:47932800             15.8              53334000        3365607.7
-23:50:09.047 INFO  ProgressMeter -          14:72429360             16.0              53916000        3366923.2
-23:50:19.057 INFO  ProgressMeter -          14:99223274             16.2              54519000        3369478.2
-23:50:29.078 INFO  ProgressMeter -          15:27725886             16.3              55103000        3370774.1
-23:50:39.081 INFO  ProgressMeter -          15:41672932             16.5              55662000        3370598.0
-23:50:49.086 INFO  ProgressMeter -          15:54825022             16.7              56201000        3369216.4
-23:50:59.096 INFO  ProgressMeter -          15:73853027             16.8              56742000        3367960.8
-23:51:09.107 INFO  ProgressMeter -          15:83107891             17.0              57279000        3366494.7
-23:51:19.118 INFO  ProgressMeter -         15:102501815             17.2              57871000        3368258.3
-23:51:29.126 INFO  ProgressMeter -           16:3640258             17.3              58431000        3368153.1
-23:51:39.127 INFO  ProgressMeter -          16:17806416             17.5              58949000        3365674.3
-23:51:49.130 INFO  ProgressMeter -          16:24857579             17.7              59434000        3361375.9
-23:51:59.139 INFO  ProgressMeter -          16:30001063             17.8              59735000        3346820.5
-23:52:09.151 INFO  ProgressMeter -          16:46566669             18.0              60143000        3338464.8
-23:52:19.162 INFO  ProgressMeter -          16:67645000             18.2              60676000        3337143.6
-23:52:29.165 INFO  ProgressMeter -          16:83841604             18.3              61231000        3337072.6
-23:52:39.168 INFO  ProgressMeter -           17:3513767             18.5              61791000        3337270.0
-23:52:49.167 INFO  ProgressMeter -          17:10363256             18.7              62360000        3337954.5
-23:52:59.170 INFO  ProgressMeter -          17:19611128             18.8              62827000        3333209.5
-23:53:09.180 INFO  ProgressMeter -          17:34264754             19.0              63387000        3333412.2
-23:53:19.191 INFO  ProgressMeter -          17:40925716             19.2              64011000        3336950.6
-23:53:29.205 INFO  ProgressMeter -          17:48680128             19.3              64634000        3340364.9
-23:53:39.212 INFO  ProgressMeter -          17:66129785             19.5              65212000        3341434.9
-23:53:49.218 INFO  ProgressMeter -          17:78363889             19.7              65794000        3342690.0
-23:53:59.309 INFO  ProgressMeter -          18:14361717             19.9              66327000        3341222.6
-23:54:09.323 INFO  ProgressMeter -          18:51795888             20.0              66878000        3340887.6
-23:54:19.331 INFO  ProgressMeter -           19:1620690             20.2              67446000        3341419.7
-23:54:29.335 INFO  ProgressMeter -           19:7808007             20.4              67986000        3340578.2
-23:54:39.348 INFO  ProgressMeter -          19:14492151             20.5              68571000        3341921.8
-23:54:49.349 INFO  ProgressMeter -          19:22363806             20.7              69118000        3341439.0
-23:54:59.361 INFO  ProgressMeter -          19:39342925             20.9              69649000        3340161.9
-23:55:09.374 INFO  ProgressMeter -          19:46105290             21.0              70201000        3339901.5
-23:55:19.389 INFO  ProgressMeter -          19:51738845             21.2              70765000        3340209.0
-23:55:29.404 INFO  ProgressMeter -          19:59081731             21.4              71350000        3341495.2
-23:55:39.411 INFO  ProgressMeter -          20:25190610             21.5              71898000        3341065.3
-23:55:49.411 INFO  ProgressMeter -          20:42979375             21.7              72455000        3341072.5
-23:55:59.421 INFO  ProgressMeter -          20:61593970             21.9              73008000        3340868.5
-23:56:09.429 INFO  ProgressMeter -          21:36193608             22.0              73542000        3339812.4
-23:56:19.439 INFO  ProgressMeter -          22:18020386             22.2              74115000        3340527.4
-23:56:29.442 INFO  ProgressMeter -          22:22973832             22.4              74622000        3338294.1
-23:56:39.450 INFO  ProgressMeter -          22:32287152             22.5              75161000        3337500.0
-23:56:49.454 INFO  ProgressMeter -          22:44275835             22.7              75733000        3338186.9
-23:56:59.460 INFO  ProgressMeter -           X:11155946             22.9              76281000        3337803.8
-23:57:09.463 INFO  ProgressMeter -           X:47230288             23.0              76886000        3339914.5
-23:57:19.479 INFO  ProgressMeter -           X:67741085             23.2              77449000        3340149.8
-23:57:29.484 INFO  ProgressMeter -          X:101821914             23.4              78015000        3340536.5
-23:57:39.496 INFO  ProgressMeter -          X:130407511             23.5              78557000        3339878.3
-23:57:49.501 INFO  ProgressMeter -          X:153876382             23.7              79152000        3341485.7
-23:57:59.515 INFO  ProgressMeter -       hs37d5:1428000             23.9              79626000        3337977.2
-23:58:09.517 INFO  ProgressMeter -      hs37d5:29915397             24.0              80203000        3338833.1
-23:58:10.318 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
+22:57:32.955 INFO  ApplyBQSR - ------------------------------------------------------------
+22:57:32.955 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.1.8.1
+22:57:32.955 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
+22:57:32.956 INFO  ApplyBQSR - Executing as lkemp@Wintermute on Linux v4.4.0-179-generic amd64
+22:57:32.956 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_265-b11
+22:57:32.956 INFO  ApplyBQSR - Start Date/Time: 11 September 2020 10:57:32 PM
+22:57:32.956 INFO  ApplyBQSR - ------------------------------------------------------------
+22:57:32.956 INFO  ApplyBQSR - ------------------------------------------------------------
+22:57:32.956 INFO  ApplyBQSR - HTSJDK Version: 2.23.0
+22:57:32.956 INFO  ApplyBQSR - Picard Version: 2.22.8
+22:57:32.956 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+22:57:32.957 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+22:57:32.957 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+22:57:32.957 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+22:57:32.957 INFO  ApplyBQSR - Deflater: IntelDeflater
+22:57:32.957 INFO  ApplyBQSR - Inflater: IntelInflater
+22:57:32.957 INFO  ApplyBQSR - GCS max retries/reopens: 20
+22:57:32.957 INFO  ApplyBQSR - Requester pays: disabled
+22:57:32.957 INFO  ApplyBQSR - Initializing engine
+22:57:33.412 INFO  ApplyBQSR - Done initializing engine
+22:57:34.707 WARN  ApplyBQSR - This tool has only been well tested on ILLUMINA-based sequencing data. For other data use at your own risk.
+22:57:34.707 INFO  ProgressMeter - Starting traversal
+22:57:34.707 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+22:57:44.709 INFO  ProgressMeter -            1:6314664              0.2                494000        2963703.6
+22:57:54.714 INFO  ProgressMeter -           1:16918343              0.3               1066000        3197040.9
+22:58:04.718 INFO  ProgressMeter -           1:26689551              0.5               1655000        3308786.8
+22:58:14.720 INFO  ProgressMeter -           1:40544281              0.7               2252000        3376902.5
+22:58:24.723 INFO  ProgressMeter -           1:55533225              0.8               2801000        3360124.8
+22:58:34.740 INFO  ProgressMeter -           1:92941178              1.0               3374000        3372201.5
+22:58:44.739 INFO  ProgressMeter -          1:117297320              1.2               3955000        3388451.0
+22:58:54.746 INFO  ProgressMeter -          1:147575439              1.3               4569000        3425123.1
+22:59:04.752 INFO  ProgressMeter -          1:153533843              1.5               5176000        3448980.5
+22:59:14.766 INFO  ProgressMeter -          1:161487847              1.7               5773000        3461757.6
+22:59:24.769 INFO  ProgressMeter -          1:191547342              1.8               6404000        3491154.9
+22:59:34.785 INFO  ProgressMeter -          1:207883927              2.0               6958000        3476740.1
+22:59:44.793 INFO  ProgressMeter -          1:228475469              2.2               7471000        3445900.8
+22:59:54.799 INFO  ProgressMeter -            2:2264074              2.3               8084000        3462296.2
+23:00:04.800 INFO  ProgressMeter -           2:30945662              2.5               8675000        3467849.9
+23:00:14.802 INFO  ProgressMeter -           2:65496793              2.7               9249000        3466338.5
+23:00:24.805 INFO  ProgressMeter -           2:91824676              2.8               9837000        3469902.5
+23:00:34.814 INFO  ProgressMeter -          2:109276014              3.0              10338000        3443952.8
+23:00:44.817 INFO  ProgressMeter -          2:131369220              3.2              10945000        3454315.9
+23:00:54.829 INFO  ProgressMeter -          2:167089782              3.3              11526000        3455709.3
+23:01:04.840 INFO  ProgressMeter -          2:198643709              3.5              12157000        3471246.6
+23:01:14.847 INFO  ProgressMeter -          2:223289375              3.7              12785000        3484616.5
+23:01:24.977 INFO  ProgressMeter -            3:2917993              3.8              13362000        3481652.0
+23:01:34.983 INFO  ProgressMeter -           3:37055850              4.0              13959000        3485741.4
+23:01:44.997 INFO  ProgressMeter -           3:49700722              4.2              14578000        3494680.1
+23:01:55.003 INFO  ProgressMeter -           3:73730316              4.3              15199000        3503486.4
+23:02:05.011 INFO  ProgressMeter -          3:122382247              4.5              15804000        3508050.2
+23:02:15.014 INFO  ProgressMeter -          3:148749780              4.7              16439000        3518784.8
+23:02:25.017 INFO  ProgressMeter -          3:186518979              4.8              17077000        3529399.6
+23:02:35.019 INFO  ProgressMeter -            4:5755520              5.0              17680000        3532338.1
+23:02:45.024 INFO  ProgressMeter -           4:19313014              5.2              18209000        3520722.4
+23:02:55.026 INFO  ProgressMeter -           4:70070197              5.3              18778000        3517368.6
+23:03:05.041 INFO  ProgressMeter -          4:103650035              5.5              19337000        3512274.0
+23:03:15.045 INFO  ProgressMeter -          4:146512364              5.7              19910000        3510050.3
+23:03:25.047 INFO  ProgressMeter -             5:833879              5.8              20526000        3515338.0
+23:03:35.059 INFO  ProgressMeter -           5:34950276              6.0              21118000        3516238.3
+23:03:45.071 INFO  ProgressMeter -           5:69405936              6.2              21707000        3516594.5
+23:03:55.079 INFO  ProgressMeter -           5:96093379              6.3              22314000        3519826.7
+23:04:05.086 INFO  ProgressMeter -          5:137481452              6.5              22923000        3523200.6
+23:04:15.092 INFO  ProgressMeter -          5:149449974              6.7              23485000        3519371.4
+23:04:25.093 INFO  ProgressMeter -          5:176860115              6.8              24067000        3518687.3
+23:04:35.108 INFO  ProgressMeter -           6:19307325              7.0              24630000        3515215.2
+23:04:45.114 INFO  ProgressMeter -           6:32095166              7.2              25213000        3514766.3
+23:04:55.114 INFO  ProgressMeter -           6:43487821              7.3              25810000        3516292.9
+23:05:05.126 INFO  ProgressMeter -           6:85374682              7.5              26415000        3518723.7
+23:05:15.139 INFO  ProgressMeter -          6:128030138              7.7              27024000        3521585.3
+23:05:25.152 INFO  ProgressMeter -          6:160873351              7.8              27648000        3526193.3
+23:05:35.160 INFO  ProgressMeter -           7:16283826              8.0              28251000        3528052.8
+23:05:45.169 INFO  ProgressMeter -           7:44424295              8.2              28826000        3526389.4
+23:05:55.184 INFO  ProgressMeter -           7:63219735              8.3              29434000        3528713.6
+23:06:05.187 INFO  ProgressMeter -           7:75052166              8.5              30006000        3526798.3
+23:06:15.189 INFO  ProgressMeter -           7:99355288              8.7              30555000        3522312.0
+23:06:25.202 INFO  ProgressMeter -          7:105653397              8.8              31164000        3524714.7
+23:06:35.205 INFO  ProgressMeter -          7:138188890              9.0              31748000        3524305.4
+23:06:45.222 INFO  ProgressMeter -          7:154760182              9.2              32310000        3521429.9
+23:06:55.227 INFO  ProgressMeter -            8:7877810              9.3              32878000        3519374.9
+23:07:05.241 INFO  ProgressMeter -           8:28997438              9.5              33490000        3521963.6
+23:07:15.266 INFO  ProgressMeter -           8:68082188              9.7              34073000        3521405.3
+23:07:25.270 INFO  ProgressMeter -           8:86734728              9.8              34683000        3523728.2
+23:07:35.270 INFO  ProgressMeter -           8:86795229             10.0              35294000        3526097.2
+23:07:45.279 INFO  ProgressMeter -           8:96047701             10.2              35902000        3528041.8
+23:07:55.280 INFO  ProgressMeter -          8:143396387             10.3              36522000        3531123.7
+23:08:05.289 INFO  ProgressMeter -           9:14747677             10.5              37074000        3527603.9
+23:08:15.303 INFO  ProgressMeter -           9:41503602             10.7              37692000        3530342.9
+23:08:25.302 INFO  ProgressMeter -           9:72042361             10.8              38296000        3531782.4
+23:08:35.317 INFO  ProgressMeter -           9:99962212             11.0              38888000        3532013.6
+23:08:45.328 INFO  ProgressMeter -          9:124966488             11.2              39467000        3531090.6
+23:08:55.329 INFO  ProgressMeter -          9:135277920             11.3              39971000        3523635.0
+23:09:05.334 INFO  ProgressMeter -             10:94426             11.5              40433000        3512721.0
+23:09:15.368 INFO  ProgressMeter -          10:15902451             11.7              40711000        3486227.3
+23:09:25.376 INFO  ProgressMeter -          10:37430589             11.8              41058000        3466428.8
+23:09:35.390 INFO  ProgressMeter -          10:64951628             12.0              41650000        3467544.0
+23:09:45.403 INFO  ProgressMeter -          10:88446948             12.2              42209000        3465933.1
+23:09:55.412 INFO  ProgressMeter -         10:104433555             12.3              42818000        3468425.4
+23:10:05.421 INFO  ProgressMeter -         10:133532404             12.5              43406000        3469182.0
+23:10:15.423 INFO  ProgressMeter -           11:6704483             12.7              44035000        3473175.3
+23:10:25.431 INFO  ProgressMeter -          11:35253526             12.8              44626000        3474088.6
+23:10:35.433 INFO  ProgressMeter -          11:62142776             13.0              45260000        3478305.4
+23:10:45.435 INFO  ProgressMeter -          11:67803735             13.2              45893000        3482335.3
+23:10:55.445 INFO  ProgressMeter -          11:89728502             13.3              46496000        3483986.0
+23:11:05.454 INFO  ProgressMeter -         11:118764892             13.5              47101000        3485752.6
+23:11:15.467 INFO  ProgressMeter -            12:330562             13.7              47574000        3477801.1
+23:11:25.481 INFO  ProgressMeter -          12:14765694             13.8              48185000        3480012.0
+23:11:35.488 INFO  ProgressMeter -          12:48884518             14.0              48751000        3478983.8
+23:11:45.488 INFO  ProgressMeter -          12:56713742             14.2              49373000        3481953.6
+23:11:55.489 INFO  ProgressMeter -          12:89860669             14.3              49977000        3483603.8
+23:12:05.498 INFO  ProgressMeter -         12:113589658             14.5              50591000        3485865.2
+23:12:15.506 INFO  ProgressMeter -         12:132624464             14.7              51152000        3484476.6
+23:12:25.505 INFO  ProgressMeter -          13:44542968             14.8              51784000        3487928.8
+23:12:35.514 INFO  ProgressMeter -         13:100634812             15.0              52383000        3489071.5
+23:12:45.518 INFO  ProgressMeter -          14:24423235             15.2              52956000        3488499.2
+23:12:55.520 INFO  ProgressMeter -          14:56757025             15.3              53532000        3488134.9
+23:13:05.533 INFO  ProgressMeter -          14:77576229             15.5              54114000        3488127.7
+23:13:15.536 INFO  ProgressMeter -         14:104564908             15.7              54705000        3488735.5
+23:13:25.555 INFO  ProgressMeter -          15:30429947             15.8              55260000        3486996.3
+23:13:35.566 INFO  ProgressMeter -          15:43907658             16.0              55864000        3488378.6
+23:13:45.574 INFO  ProgressMeter -          15:65223032             16.2              56465000        3489561.4
+23:13:55.589 INFO  ProgressMeter -          15:79071950             16.3              57093000        3492346.7
+23:14:05.594 INFO  ProgressMeter -          15:91421391             16.5              57644000        3490448.5
+23:14:15.597 INFO  ProgressMeter -           16:2367600             16.7              58267000        3492911.3
+23:14:25.609 INFO  ProgressMeter -          16:16308120             16.8              58874000        3494348.1
+23:14:35.623 INFO  ProgressMeter -          16:28332561             17.0              59506000        3497212.3
+23:14:45.632 INFO  ProgressMeter -          16:33785867             17.2              60104000        3498062.4
+23:14:55.647 INFO  ProgressMeter -          16:67693914             17.3              60692000        3498299.6
+23:15:05.649 INFO  ProgressMeter -          16:84657416             17.5              61279000        3498521.8
+23:15:15.651 INFO  ProgressMeter -           17:3656690             17.7              61807000        3495399.8
+23:15:25.664 INFO  ProgressMeter -          17:12013634             17.8              62413000        3496670.3
+23:15:35.672 INFO  ProgressMeter -          17:26669395             18.0              63007000        3497264.0
+23:15:45.678 INFO  ProgressMeter -          17:37342761             18.2              63628000        3499341.4
+23:15:55.682 INFO  ProgressMeter -          17:42937368             18.3              64193000        3498335.6
+23:16:05.686 INFO  ProgressMeter -          17:56801376             18.5              64806000        3499943.3
+23:16:15.686 INFO  ProgressMeter -          17:73269603             18.7              65427000        3501959.9
+23:16:25.690 INFO  ProgressMeter -             18:45496             18.8              66022000        3502549.1
+23:16:35.698 INFO  ProgressMeter -          18:36238474             19.0              66645000        3504588.1
+23:16:45.700 INFO  ProgressMeter -            19:406283             19.2              67285000        3507493.1
+23:16:55.701 INFO  ProgressMeter -           19:6772557             19.3              67888000        3508441.9
+23:17:05.712 INFO  ProgressMeter -          19:13064426             19.5              68476000        3508576.0
+23:17:15.721 INFO  ProgressMeter -          19:21365804             19.7              69077000        3509374.1
+23:17:25.729 INFO  ProgressMeter -          19:38794950             19.9              69569000        3504673.7
+23:17:35.741 INFO  ProgressMeter -          19:41307014             20.0              69861000        3490042.7
+23:17:45.744 INFO  ProgressMeter -          19:48578013             20.2              70383000        3487080.5
+23:17:55.743 INFO  ProgressMeter -          19:54782856             20.4              70992000        3488447.5
+23:18:05.749 INFO  ProgressMeter -           20:5921871             20.5              71602000        3489824.1
+23:18:15.758 INFO  ProgressMeter -          20:34173047             20.7              72193000        3490254.2
+23:18:25.757 INFO  ProgressMeter -          20:56078686             20.9              72818000        3492330.4
+23:18:35.758 INFO  ProgressMeter -          21:31691494             21.0              73406000        3492610.5
+23:18:45.763 INFO  ProgressMeter -          21:47674280             21.2              73993000        3492828.0
+23:18:55.774 INFO  ProgressMeter -          22:22620064             21.4              74613000        3494574.1
+23:19:05.784 INFO  ProgressMeter -          22:35796338             21.5              75223000        3495828.3
+23:19:15.788 INFO  ProgressMeter -          22:46775216             21.7              75837000        3497261.1
+23:19:25.807 INFO  ProgressMeter -           X:19612988             21.9              76457000        3498909.3
+23:19:35.819 INFO  ProgressMeter -           X:49104202             22.0              77044000        3499052.3
+23:19:45.821 INFO  ProgressMeter -           X:70612757             22.2              77551000        3495616.1
+23:19:55.821 INFO  ProgressMeter -          X:107271674             22.4              78144000        3496078.6
+23:20:05.836 INFO  ProgressMeter -          X:140673023             22.5              78759000        3497475.1
+23:20:15.841 INFO  ProgressMeter -     GL000221.1:75678             22.7              79371000        3498747.0
+23:20:25.853 INFO  ProgressMeter -      hs37d5:19826555             22.9              79983000        3499977.4
+23:20:30.118 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
 
-23:58:10.318 INFO  ProgressMeter -             unmapped             24.0              80252081        3339020.6
-23:58:10.318 INFO  ProgressMeter - Traversal complete. Processed 80252081 total reads in 24.0 minutes.
-23:58:10.369 INFO  ApplyBQSR - Shutting down engine
-[11 September 2020 11:58:10 PM] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 24.08 minutes.
-Runtime.totalMemory()=1743781888
-Using GATK jar /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9b3bdd1f/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar
+23:20:30.118 INFO  ProgressMeter -             unmapped             22.9              80252081        3500862.5
+23:20:30.118 INFO  ProgressMeter - Traversal complete. Processed 80252081 total reads in 22.9 minutes.
+23:20:32.731 INFO  ApplyBQSR - Shutting down engine
+[11 September 2020 11:20:32 PM] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 23.00 minutes.
+Runtime.totalMemory()=1896349696
+Using GATK jar /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/bb402f1e/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar
 Running:
-    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx30g -jar /store/lkemp/resource_benchmarking/resource_bench_08_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/9b3bdd1f/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar ApplyBQSR -R /store/lkemp/publicData/b37/human_g1k_v37_decoy.fasta -I ../results/mapped/NIST7035_NIST_sorted_mkdups.bam --bqsr-recal-file ../results/mapped/NIST7035_NIST_recalibration_report.grp -O ../results/mapped/NIST7035_NIST_recalibrated.bam
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx30g -jar /store/lkemp/resource_benchmarking/resource_bench_16_thread/single/human_genomics_pipeline/workflow/.snakemake/conda/bb402f1e/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar ApplyBQSR -R /store/lkemp/publicData/b37/human_g1k_v37_decoy.fasta -I ../results/mapped/NIST7035_NIST_sorted_mkdups.bam --bqsr-recal-file ../results/mapped/NIST7035_NIST_recalibration_report.grp -O ../results/mapped/NIST7035_NIST_recalibrated.bam
