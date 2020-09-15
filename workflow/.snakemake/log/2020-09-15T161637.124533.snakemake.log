@@ -1,7 +1,7 @@
 localrules directive specifies rules that are not present in the Snakefile:
 	pbrun_fq2bam
-	pbrun_genotypegvcf
 	pbrun_haplotypecaller_single
+	pbrun_genotypegvcf
 	pbrun_haplotypecaller_cohort
 
 Building DAG of jobs...
